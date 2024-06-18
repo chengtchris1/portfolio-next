@@ -5,6 +5,8 @@ import { MoreStories } from '@/app/_components/more-stories';
 import { getAllPosts } from '@/lib/api';
 import Hero3DCanvas from '@/app/_components/hero3d';
 import Carausel from './_components/carausel';
+import Image from 'next/image';
+import bg from '@/assets/hero-bg.png';
 export default function Index() {
     const allPosts = getAllPosts();
 
@@ -15,11 +17,16 @@ export default function Index() {
     return (
         <main>
             <div
-                className="hero m-0 mb-0 flex h-fit flex-col-reverse items-center justify-center bg-black bg-cover bg-center bg-no-repeat object-cover sm:h-screen sm:flex-row"
-                style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.1)), url(/assets/hero-bg.png)`,
-                }}
+                className="hero m-0 mb-0 flex h-fit flex-col-reverse items-center justify-center bg-black bg-cover bg-center bg-no-repeat object-cover sm:h-screen sm:flex-row bg-dark-gradient"
+
             >
+                <Image
+                className=' contrast-more-50 filter brightness-200 opacity-25'
+                src={bg}
+                quality={100}
+                priority={true}
+                fill
+                />
                 <div className="absolute left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white">
                     <h1 className="font-light tracking-tighter">
                         <span className="font-bold italic">Hi.</span>

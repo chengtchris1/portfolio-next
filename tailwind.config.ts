@@ -13,7 +13,10 @@ const config: Config = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+                'dark-gradient':
+                    'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1))',
             },
+
             colors: {
                 'accent-1': '#FAFAFA',
                 'accent-2': '#EAEAEA',
