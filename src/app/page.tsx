@@ -37,6 +37,7 @@ export default function Index() {
 
                 <div className="z-1 h-screen w-screen cursor-move">
                     <Hero3DCanvas />
+                    <div className="absolute inset-0 z-10 bg-transparent sm:hidden"></div>
                 </div>
             </div>
 
