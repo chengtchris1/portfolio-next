@@ -8,14 +8,14 @@ import { FaLinkedin } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
 import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
-
+/*
 export const metadata: Metadata = {
     title: `Next.js Blog Example with ${CMS_NAME}`,
     description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
     openGraph: {
         images: [HOME_OG_IMAGE_URL],
     },
-};
+};*/
 
 export default function RootLayout({
     children,
@@ -68,7 +68,7 @@ export default function RootLayout({
                             Chris Cheng
                         </div>
                         <div className="col-span-1">
-                            <Navbar />
+                           { /*<Navbar />*/ }
                         </div>
                         <div className="col-span-2 mr-0 flex flex-row justify-self-end sm:mr-20">
                             <Link

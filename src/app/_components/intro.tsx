@@ -14,7 +14,7 @@ export function Intro() {
                     </div>*/}
                 </div>
             </div>
-            <p className="mt-5 w-screen p-5 text-left text-lg md:w-auto md:pl-8">
+            <p className="mt-5 w-screen p-8 text-left text-lg md:w-auto md:pl-8">
 
             My journey in coding began in elementary school where I created
               VBS scripts to do various tasks with my computer (such as opening
