@@ -21,7 +21,7 @@ export default function Index() {
 
             >
                 <Image
-                className=' contrast-more-50 filter brightness-200 opacity-25'
+                className=' contrast-more-50 filter brightness-200 opacity-20'
                 src={bg}
                 quality={100}
                 priority={true}
