@@ -47,7 +47,7 @@ export default function Index() {
                 </Container>
             </div>
 
-            <div className="bg-black text-white px-4">
+            <div className="bg-black text-white">
                 <Container>
                     {/*<HeroPost
           title={heroPost.title}
