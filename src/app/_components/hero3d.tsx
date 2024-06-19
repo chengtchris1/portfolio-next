@@ -9,18 +9,10 @@ const Hero3D = () => {
     const myModel = useGLTF(scene);
     const ref = useRef(null);
     const [scrollPos, setScrollPos] = useState(0);
-    let lastScrollPos = 0;
     useEffect(() => {
-    const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    if (currentScrollPos < lastScrollPos) {
-        // User is scrolling up, do nothing
-         } else {
-        // User is scrolling down, update scrollPos
-        setScrollPos(currentScrollPos);
-    }
-    lastScrollPos = currentScrollPos;
-};
+        const handleScroll = () => {
+            setScrollPos(window.scrollY);
+        };
 
         window.addEventListener('scroll', handleScroll);
 
