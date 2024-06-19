@@ -3,20 +3,20 @@ import Carausel from '@/app/_components/carausel';
 export function Intro() {
     return (
         <section className="mb-16 mt-16 pb-8 flex flex-col items-start lg:mb-12 md:flex-row lg:justify-between">
-            <div className="flex flex-col">
-                <h1 className="w-screen pl-0 p-5 pb-5 pt-8 font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8 text-6xl">
+            <div className="flex flex-col h-fit w-full items-center justify-center">
+                <h1 className="w-full pl-0 p-5 pb-5 pt-8 font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8 text-6xl">
                     About Me
                 </h1>
-                <div className="flex w-full items-center justify-center drop-shadow-2xl">
+                <div className="flex w-fit items-center justify-center drop-shadow-2xl h-72">
                     <Carausel />
                     {/*<div className="h-52 w-52 overflow-clip bg-opacity-50 bg-gradient-to-br from-green-400 to-blue-600 mb-10 border-y-4 border-x-4 border-b-8 border-black drop-shadow-md">
                     <img className="p-0" src={'/assets_new/portrait.png'} />
                     </div>*/}
                 </div>
             </div>
-            <p className="mt-5 p-0 text-left text-lg w-fit">
+            <p className="mt-5 md:mt-12 md:p-10 text-left text-lg w-fit">
 
-            My journey in coding began in elementary school where I created
+              My journey in coding began in elementary school where I created
               VBS scripts to do various tasks with my computer (such as opening
               the CD drive)—igniting a passion that has stayed with me
               throughout my career. I realized my heart is in software
