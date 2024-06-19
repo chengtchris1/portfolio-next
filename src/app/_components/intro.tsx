@@ -4,9 +4,11 @@ export function Intro() {
     return (
         <section className="mb-16 mt-16 pb-8 flex flex-col items-start lg:mb-12 md:flex-row lg:justify-between">
             <div className="flex flex-col h-fit w-full items-center justify-center">
+                <div className='p-0 m-0 w-full'>
                 <h1 className="w-full pl-0 p-5 pb-5 pt-8 font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8 text-6xl">
                     About Me
                 </h1>
+                </div>
                 <div className="flex w-fit items-center justify-center drop-shadow-2xl h-72">
                     <Carausel />
                     {/*<div className="h-52 w-52 overflow-clip bg-opacity-50 bg-gradient-to-br from-green-400 to-blue-600 mb-10 border-y-4 border-x-4 border-b-8 border-black drop-shadow-md">
