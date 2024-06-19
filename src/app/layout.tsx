@@ -63,7 +63,7 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <div className="fixed z-50 grid w-full grid-cols-5 items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
+                    <div className="fixed h-10 z-50 grid w-full grid-cols-5 items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
                         <div className="ml:0 text-2x col-span-2 ml-3 justify-self-start font-bold sm:ml-20">
                             Chris Cheng
                         </div>
@@ -71,7 +71,22 @@ export default function RootLayout({
                            { /*<Navbar />*/ }
                         </div>
                         <div className="col-span-2 mr-0 flex flex-row justify-self-end sm:mr-20">
-                            <Link
+                            {/*<Link
+                                href={
+                                    'https://www.linkedin.com/in/chengtchris/'
+                                }
+                            >
+                                <FaLinkedin className="mx-3" />
+                            </Link>
+                            <Link href={'https://github.com/chengtchris1'}>
+                                <LuGithub className="mx-3" />
+                            </Link>*/}
+                        </div>
+                    </div>
+                    {children}
+                    <div className='fixed flex flex-row w-screen justify-end items-center bottom-0 h-10 bg-black'>
+                        <div className='flex items-center justify-center pr-20'>
+                        <Link
                                 href={
                                     'https://www.linkedin.com/in/chengtchris/'
                                 }
@@ -81,9 +96,9 @@ export default function RootLayout({
                             <Link href={'https://github.com/chengtchris1'}>
                                 <LuGithub className="mx-3" />
                             </Link>
-                        </div>
+                            </div>
+
                     </div>
-                    {children}
                 </div>
                 <Footer />
             </body>

@@ -4,7 +4,7 @@ export function Intro() {
     return (
         <section className="mb-16 mt-16 pb-8 flex flex-col items-center md:mb-12 md:flex-row md:justify-between">
             <div className="flex flex-col">
-                <h1 className="w-screen p-5 pb-5 pt-8 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8 md:text-7xl">
+                <h1 className="w-screen py-5 px-9 lg:p-9 pb-5 pt-8 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:px-8 md:text-7xl">
                     About Me
                 </h1>
                 <div className="flex w-full items-center justify-center drop-shadow-2xl">
@@ -14,7 +14,7 @@ export function Intro() {
                     </div>*/}
                 </div>
             </div>
-            <p className="mt-5 w-screen p-8 text-left text-lg md:w-auto md:pl-8">
+            <p className="mt-5 w-screen p-12 text-left text-lg ">
 
             My journey in coding began in elementary school where I created
               VBS scripts to do various tasks with my computer (such as opening
