@@ -66,7 +66,7 @@ const images = [
             <div className='flex flex-col text-white'>
             <Container>
             <h1 className='text-6xl font-bold'>Some tech I used</h1>
-                <div className='flex flex-row gap-10 overflow-hidden h-[1650px] sm-h-[1700px]'>
+                <div className='flex flex-row items-center justify-center overflow-hidden h-[900px] sm:h-[900px]'>
                 <ParallaxScroll images={images}/>
                 </div>
             </Container>

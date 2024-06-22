@@ -91,9 +91,9 @@ export const ParallaxScroll = ({
       name: "Three.js",
     },
   ];
-    const translateFirst = useTransform(scrollYProgress, [0.2, 1], [0, -200]);
-    const translateSecond = useTransform(scrollYProgress, [0.2, 1], [0, 200]);
-    const translateThird = useTransform(scrollYProgress, [0.2, 1], [0, -200]);
+    const translateFirst = useTransform(scrollYProgress, [0.23, .7], [0, -200]);
+    const translateSecond = useTransform(scrollYProgress, [0.23, .7], [0, 200]);
+    const translateThird = useTransform(scrollYProgress, [0.23, .7], [0, -200]);
 
     const third = Math.ceil(images.length / 3);
 
@@ -106,8 +106,8 @@ export const ParallaxScroll = ({
             id="parallax-scroll"
             className={cn('h-[80rem] w-full items-start', className)}
         >
-            <div className="mx-auto grid max-w-5xl items-start gap-1 md:gap-5 lg:gap:10 sm:px-10 pt-20 grid-cols-3">
-                <div className="grid gap-10 sm:px-12">
+            <div className="mx-auto grid max-w-5xl items-start gap-[5px] md:gap-5 lg:gap:10 grid-cols-3">
+                <div className="grid gap-[5px] md:gap-5 lg:gap:10  p-0">
                     {firstPart.map((el, idx) => (
                         <motion.div
                             style={{ y: translateFirst }} // Apply the translateY motion value here
@@ -117,7 +117,7 @@ export const ParallaxScroll = ({
                         </motion.div>
                     ))}
                 </div>
-                <div className="grid gap-10 sm:px-12">
+                <div className="grid gap-[5px] md:gap-5 lg:gap:10  p-0">
                     {secondPart.map((el, idx) => (
                         <motion.div
                             style={{ y: translateSecond }}
@@ -127,7 +127,7 @@ export const ParallaxScroll = ({
                         </motion.div>
                     ))}
                 </div>
-                <div className="grid gap-10 sm:px-12">
+                <div className="grid gap-[5px] md:gap-5 lg:gap:10 p-0">
                     {thirdPart.map((el, idx) => (
                         <motion.div
                             style={{ y: translateThird }}
