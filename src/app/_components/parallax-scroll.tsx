@@ -91,9 +91,9 @@ export const ParallaxScroll = ({
       name: "Three.js",
     },
   ];
-    const translateFirst = useTransform(scrollYProgress, [0.3, 1], [0, -300]);
-    const translateSecond = useTransform(scrollYProgress, [0.3, 1], [0, 300]);
-    const translateThird = useTransform(scrollYProgress, [0.3, 1], [0, -300]);
+    const translateFirst = useTransform(scrollYProgress, [0.2, 1], [0, -300]);
+    const translateSecond = useTransform(scrollYProgress, [0.2, 1], [0, 300]);
+    const translateThird = useTransform(scrollYProgress, [0.2, 1], [0, -300]);
 
     const third = Math.ceil(images.length / 3);
 
