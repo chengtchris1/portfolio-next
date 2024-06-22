@@ -36,8 +36,8 @@ const images = [
                     fourthColor='127,0,255'
                     pointerColor='20,184,166'
 
-                   interactive={true}
-                    size="60%">
+                    interactive={true}
+                    size="40%">
                 <div className="absolute z-50 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white">
                     <h1 className="font-light tracking-tighter">
                         <p className='bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20'>
@@ -66,7 +66,7 @@ const images = [
             <div className='flex flex-col text-white'>
             <Container>
             <h1 className='text-6xl font-bold'>Some tech I used</h1>
-                <div className='flex flex-row gap-10 overflow-hidden h-[900px]'>
+                <div className='flex flex-row gap-10 overflow-hidden h-[1600px]'>
                 <ParallaxScroll images={images}/>
                 </div>
             </Container>
