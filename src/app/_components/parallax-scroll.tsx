@@ -28,7 +28,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 
 const IconCard = ({ icon, label }: { icon: any; label: string }) => {
     return (
-        <div className="flex  flex-col h-[150px] sm:h-[300px] max-w-4xl items-center justify-center rounded-xl bg-white text-black">
+        <div className="flex flex-col h-[200px] sm:h-[200px] max-w-4xl items-center justify-center rounded-xl bg-white text-black">
             <div className='text-5xl'>{icon}</div>
             <div>{label}</div>
         </div>
@@ -91,9 +91,9 @@ export const ParallaxScroll = ({
       name: "Three.js",
     },
   ];
-    const translateFirst = useTransform(scrollYProgress, [0.2, 1], [0, -300]);
-    const translateSecond = useTransform(scrollYProgress, [0.2, 1], [0, 300]);
-    const translateThird = useTransform(scrollYProgress, [0.2, 1], [0, -300]);
+    const translateFirst = useTransform(scrollYProgress, [0.2, 1], [0, -200]);
+    const translateSecond = useTransform(scrollYProgress, [0.2, 1], [0, 200]);
+    const translateThird = useTransform(scrollYProgress, [0.2, 1], [0, -200]);
 
     const third = Math.ceil(images.length / 3);
 
@@ -107,7 +107,7 @@ export const ParallaxScroll = ({
             className={cn('h-[80rem] w-full items-start', className)}
         >
             <div className="mx-auto grid max-w-5xl items-start gap-1 md:gap-5 lg:gap:10 sm:px-10 pt-20 grid-cols-3">
-                <div className="grid gap-10">
+                <div className="grid gap-10 sm:px-12">
                     {firstPart.map((el, idx) => (
                         <motion.div
                             style={{ y: translateFirst }} // Apply the translateY motion value here
@@ -117,7 +117,7 @@ export const ParallaxScroll = ({
                         </motion.div>
                     ))}
                 </div>
-                <div className="grid gap-10">
+                <div className="grid gap-10 sm:px-12">
                     {secondPart.map((el, idx) => (
                         <motion.div
                             style={{ y: translateSecond }}
@@ -127,7 +127,7 @@ export const ParallaxScroll = ({
                         </motion.div>
                     ))}
                 </div>
-                <div className="grid gap-10">
+                <div className="grid gap-10 sm:px-12">
                     {thirdPart.map((el, idx) => (
                         <motion.div
                             style={{ y: translateThird }}
