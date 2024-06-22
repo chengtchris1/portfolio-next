@@ -1,28 +1,24 @@
-import type { Config } from 'tailwindcss';
-
-const config: Config = {
-    content: [
-        './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    ],
+const {
+    default: flattenColorPalette,
+} = require('tailwindcss/lib/util/flattenColorPalette');
+module.exports = {
+    content: ['./src/**/*.{ts,tsx}'],
+    darkMode: 'class',
     theme: {
-        prefix: '',
         extend: {
-            backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-conic':
-                    'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-                'dark-gradient':
-                    'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1))',
+            animation: {
+                first: 'moveVertical 30s ease infinite',
+                second: 'moveInCircle 20s reverse infinite',
+                third: 'moveInCircle 40s linear infinite',
+                fourth: 'moveHorizontal 40s ease infinite',
+                fifth: 'moveInCircle 20s ease infinite',
             },
-
+            borderRadius: {
+                lg: 'var(--radius)',
+                md: 'calc(var(--radius) - 2px)',
+                sm: 'calc(var(--radius) - 4px)',
+            },
             colors: {
-                'accent-1': '#FAFAFA',
-                'accent-2': '#EAEAEA',
-                'accent-7': '#333',
-                success: '#0070f3',
-                cyan: '#79FFE1',
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
                 ring: 'hsl(var(--ring))',
@@ -57,36 +53,7 @@ const config: Config = {
                     foreground: 'hsl(var(--card-foreground))',
                 },
             },
-            borderRadius: {
-                lg: 'var(--radius)',
-                md: 'calc(var(--radius) - 2px)',
-                sm: 'calc(var(--radius) - 4px)',
-            },
-            spacing: {
-                28: '7rem',
-            },
-            letterSpacing: {
-                tighter: '-.04em',
-            },
-            fontSize: {
-                '5xl': '2.5rem',
-                '6xl': '2.75rem',
-                '7xl': '4.5rem',
-                '8xl': '6.25rem',
-            },
-            boxShadow: {
-                sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
-                md: '0 8px 30px rgba(0, 0, 0, 0.12)',
-            },
             keyframes: {
-                'accordion-down': {
-                    from: { height: '0' },
-                    to: { height: 'var(--radix-accordion-content-height)' },
-                },
-                'accordion-up': {
-                    from: { height: 'var(--radix-accordion-content-height)' },
-                    to: { height: '0' },
-                },
                 moveHorizontal: {
                     '0%': {
                         transform: 'translateX(-50%) translateY(-10%)',
@@ -121,17 +88,17 @@ const config: Config = {
                     },
                 },
             },
-            animation: {
-                'accordion-down': 'accordion-down 0.2s ease-out',
-                'accordion-up': 'accordion-up 0.2s ease-out',
-                first: 'moveVertical 30s ease infinite',
-                second: 'moveInCircle 20s reverse infinite',
-                third: 'moveInCircle 40s linear infinite',
-                fourth: 'moveHorizontal 40s ease infinite',
-                fifth: 'moveInCircle 20s ease infinite',
-            },
         },
     },
-    plugins: [require('tailwindcss-animate')],
+    plugins: [addVariablesForColors],
 };
-export default config;
+function addVariablesForColors({ addBase, theme }: any) {
+    let allColors = flattenColorPalette(theme('colors'));
+    let newVars = Object.fromEntries(
+        Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    );
+
+    addBase({
+        ':root': newVars,
+    });
+}

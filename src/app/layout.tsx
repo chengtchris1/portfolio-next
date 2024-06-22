@@ -64,16 +64,14 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <div className="fixed h-10 z-50 grid w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
+                    <div className="fixed z-50 grid h-10 w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
                         <Container>
-                        <div className="ml-0 text-2x w-full font-bold">
-                            Chris Cheng
-                        </div>
-                        <div className="col-span-1">
-                           { /*<Navbar />*/ }
-                        </div>
-                        <div className="col-span-2 mr-0 flex flex-row justify-self-end sm:mr-20">
-                            {/*<Link
+                            <div className="text-2x ml-0 w-full font-bold">
+                                Chris Cheng
+                            </div>
+                            <div className="col-span-1">{/*<Navbar />*/}</div>
+                            <div className="col-span-2 mr-0 flex flex-row justify-self-end sm:mr-20">
+                                {/*<Link
                                 href={
                                     'https://www.linkedin.com/in/chengtchris/'
                                 }
@@ -83,26 +81,25 @@ export default function RootLayout({
                             <Link href={'https://github.com/chengtchris1'}>
                                 <LuGithub className="mx-3" />
                             </Link>*/}
-                        </div>
+                            </div>
                         </Container>
                     </div>
                     {children}
-                    <div className='fixed flex flex-row w-screen justify-end items-center bottom-0 h-10 bg-black'>
-                    <Container>
-                    <div className='flex flex-row items-center justify-end'>
-                        <Link
-                                href={
-                                    'https://www.linkedin.com/in/chengtchris/'
-                                }
-                            >
-                        <FaLinkedin className="mx-2" />
-                            </Link>
-                            <Link href={'https://github.com/chengtchris1'}>
-                                <LuGithub className="mx-2" />
-                            </Link>
-                    </div>
-                    </Container>
-
+                    <div className="fixed bottom-0 flex h-10 w-screen flex-row items-center justify-end bg-black">
+                        <Container>
+                            <div className="flex flex-row items-center justify-end">
+                                <Link
+                                    href={
+                                        'https://www.linkedin.com/in/chengtchris/'
+                                    }
+                                >
+                                    <FaLinkedin className="mx-2" />
+                                </Link>
+                                <Link href={'https://github.com/chengtchris1'}>
+                                    <LuGithub className="mx-2" />
+                                </Link>
+                            </div>
+                        </Container>
                     </div>
                 </div>
                 <Footer />
