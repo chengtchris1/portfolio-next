@@ -23,7 +23,7 @@ type Props = {
     slug?: string;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImageCarausel = ({ title, src, slug }: Props) => {
 const images = Array.isArray(src) ? src : [src];
 const carausel = (<Swiper
                 className="w-full flex items-center justify-center"
@@ -48,15 +48,14 @@ const carausel = (<Swiper
                 {images.map((src, i) =>{
                 return (<SwiperSlide key={i}>
                     <div className="flex h-full w-full overflow-clip items-center justify-center">
-                    <div className='mb-12 w-[1300px] rounded-2xl overflow-clip'>
+                        <div className='mb-12 w-[1300px] rounded-2xl overflow-clip'>
                             <Image
                                 src={src}
                                 alt={title}
                                 width={1300}
                                 height={630}
-                                loading='lazy'
                             />
-                            </div>
+                        </div>
                     </div>
                 </SwiperSlide>)}
                 )}
@@ -80,4 +79,4 @@ const carausel = (<Swiper
     );
 };
 
-export default CoverImage;
+export default CoverImageCarausel;

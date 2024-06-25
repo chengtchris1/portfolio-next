@@ -1,5 +1,5 @@
 import Avatar from '@/app/_components/avatar';
-import CoverImage from '@/app/_components/cover-image';
+import CoverImageCarausel from './CoverImageCarausel';
 import { type Author } from '@/interfaces/author';
 import Link from 'next/link';
 import DateFormatter from './date-formatter';
@@ -24,7 +24,7 @@ export function HeroPost({
     return (
         <section>
             <div className="mb-8 md:mb-16">
-                <CoverImage title={title} src={coverImage} slug={slug} />
+                <CoverImageCarausel title={title} src={coverImage} slug={slug} />
             </div>
             <div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                 <div>

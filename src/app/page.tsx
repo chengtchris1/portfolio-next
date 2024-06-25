@@ -13,7 +13,6 @@ export default function Index() {
     const allPosts = getAllPosts();
     const heroPost = allPosts[0];
     const morePosts = allPosts.slice(1);
-
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     return (
         <main>
@@ -58,7 +57,7 @@ export default function Index() {
             <div className="flex flex-col text-white">
                 <Container>
                     <h1 className="text-6xl font-bold">Some tech I used</h1>
-                    <div className="relative flex h-[900px] flex-row items-center justify-center overflow-hidden sm:h-[900px]">
+                    <div className="relative flex h-[900px] flex-row items-center justify-center overflow-hidden sm:h-[1050px]">
                         <ParallaxScroll images={images} />
                         <div className="absolute inset-0 h-1/6 bg-gradient-to-b from-black"></div>
                         <div className="absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-black"></div>

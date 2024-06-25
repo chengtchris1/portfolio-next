@@ -90,7 +90,7 @@ module.exports = {
             },
         },
     },
-    plugins: [addVariablesForColors],
+    plugins: [addVariablesForColors, require('daisyui')],
 };
 function addVariablesForColors({ addBase, theme }: any) {
     let allColors = flattenColorPalette(theme('colors'));
