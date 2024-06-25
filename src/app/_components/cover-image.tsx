@@ -46,7 +46,7 @@ const carausel = (<Swiper
                 // scrollbar={{ draggable: true }}
             >
                 {images.map((src, i) =>{
-                return (<SwiperSlide>
+                return (<SwiperSlide key={i}>
                     <div className="flex h-full w-full overflow-clip items-center justify-center">
                     <div className='mb-12 w-[1300px] rounded-2xl overflow-clip'>
                             <Image
@@ -55,7 +55,6 @@ const carausel = (<Swiper
                                 width={1300}
                                 height={630}
                                 loading='lazy'
-                                key={i}
                             />
                             </div>
                     </div>
