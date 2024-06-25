@@ -26,7 +26,7 @@ type Props = {
 const CoverImage = ({ title, src, slug }: Props) => {
 const images = Array.isArray(src) ? src : [src];
 const carausel = (<Swiper
-            className="w-full flex items-center justify-center"
+                className="w-full flex items-center justify-center"
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 effect={'cards'}
