@@ -15,7 +15,6 @@ export default function Index() {
     const morePosts = allPosts.slice(1);
 
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
     return (
         <main>
             <div className="bg-dark-gradient m-0 mb-0 flex h-fit flex-col-reverse items-center justify-center bg-black bg-cover bg-center bg-no-repeat object-cover sm:h-screen sm:flex-row">

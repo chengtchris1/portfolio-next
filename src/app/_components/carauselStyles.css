@@ -1,0 +1,12 @@
+.swiper-pagination-bullet {
+    background-color: #ffffff; /* Replace #YourInactiveColor with your desired color */
+}
+.swiper-pagination-bullet-active {
+    background-color: #ffffff; /* This keeps the active bullet white, as per your existing setup */
+}
+#portrait .swiper-pagination-bullet-active {
+    background-color: #000000; /* This keeps the active bullet white, as per your existing setup */
+}
+#portrait .swiper-pagination-bullet {
+    background-color: #111111; /* This keeps the active bullet white, as per your existing setup */
+}

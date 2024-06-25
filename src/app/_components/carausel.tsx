@@ -16,6 +16,7 @@ export default function Carausel() {
     return (
         <div className="max-w-[405px]">
             <Swiper
+                id="portrait"
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 effect={'cards'}
@@ -34,11 +35,9 @@ export default function Carausel() {
                     perSlideOffset: 10,
                     perSlideRotate: 10, // Space between cards in px perSlideRotate: 1, // Rotation of cards in degrees
                 }}
-                style={
-                    {
-                        '--swiper-pagination-color': '#000000',
-                    } as React.CSSProperties
-                }
+                style={{
+                    '--swiper-pagination-color': '#000000 !important',
+                } as React.CSSProperties}
                 // scrollbar={{ draggable: true }}
             >
                 <SwiperSlide>

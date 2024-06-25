@@ -1,14 +1,25 @@
+'use client';
 import { type Author } from '@/interfaces/author';
 import Link from 'next/link';
 import Avatar from './avatar';
 import CoverImage from './cover-image';
 import DateFormatter from './date-formatter';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+    Navigation,
+    Pagination,
+    Scrollbar,
+    EffectCoverflow,
+    Autoplay,
+    EffectCards,
+} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 type Props = {
     title: string;
-    coverImage: string;
-    date: string;
-    excerpt: string;
+    coverImage: string | [string];
     author: Author;
     slug: string;
 };
@@ -24,7 +35,8 @@ export function PostPreview({
     return (
         <div>
             <div className="mb-5">
-                <CoverImage slug={slug} title={title} src={coverImage} />
+                {<CoverImage slug={slug} title={title} src={coverImage} />}
+
             </div>
             <h3 className="mb-3 text-3xl leading-snug">
                 <Link href={`/posts/${slug}`} className="hover:underline">
