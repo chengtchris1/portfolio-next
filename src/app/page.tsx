@@ -12,7 +12,7 @@ import { ParallaxScroll } from './_components/parallax-scroll';
 export default function Index() {
     const allPosts = getAllPosts();
     const heroPost = allPosts[0];
-    const morePosts = allPosts.slice(1);
+    const morePosts = allPosts;
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     return (
         <main>
