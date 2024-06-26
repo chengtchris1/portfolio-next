@@ -22,25 +22,25 @@ export default function Index() {
                     gradientBackgroundStart="rgb(0,0,0)"
                     gradientBackgroundEnd="rgb(0,0,0)"
                     firstColor="20,184,166"
-                   // secondColor="255,255,255"
+                    // secondColor="255,255,255"
                     thirdColor="20,184,166"
                     fifthColor="56,189,248"
                     fourthColor="127,0,255"
                     //pointerColor="255, 255, 255"
                     interactive={true}
                     blendingValue="color-dodge"
-                    size="80%"
+                    size="100%"
                 >
-                    <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white md:left-[50%]">
-                        <h1 className="font-light tracking-tighter">
-                            <div className="bg-gradient-to-b from-white/90 to-white/30 bg-clip-text text-transparent mix-blend-color-dodge drop-shadow-2xl">
+                    <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white mix-blend-screen md:left-[50%]">
+                        <div className="font-light tracking-tighter">
+                            <div className="bg-gradient-to-t from-teal-400/100 to-indigo-500/100 bg-clip-text text-transparent drop-shadow-2xl">
                                 <div className="font-bold italic">Hi.</div>
                                 <div className="italic">I'm Chris.</div>
                             </div>
-                        </h1>
+                        </div>
                     </div>
                     <Image
-                        className="opacity-80"
+                        className="opacity-90"
                         src={bg}
                         quality={100}
                         priority={true}
