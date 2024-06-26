@@ -59,8 +59,8 @@ const IconCard = ({ icon, label }: { icon: any; label: string }) => {
     return (
         <div className='mockup-window border border-gray-600 drop-shadow-xl'>
             <div className={gradientBg}>
-                <div className="text-5xl text-white drop-shadow-2xl">{icon}</div>
-                <div className='px-2'>{label}</div>
+                <div className="text-5xl text-white drop-shadow-2xl p-0 m-0">{icon}</div>
+                <div className='p-0'>{label}</div>
             </div>
         </div>
     );
@@ -78,53 +78,53 @@ export const ParallaxScroll = ({
     });
     const icons = [
         {
-            component: <IoLogoJavascript className="mx-2 sm:mx-10" />,
+            component: <IoLogoJavascript className="" />,
             name: 'JavaScript',
         },
-        { component: <IoLogoReact className="mx-2 sm:mx-10" />, name: 'React' },
-        { component: <FaJava className="mx-2 sm:mx-10" />, name: 'Java' },
-        { component: <FaPython className="mx-2 sm:mx-10" />, name: 'Python' },
+        { component: <IoLogoReact className="" />, name: 'React' },
+        { component: <FaJava className="" />, name: 'Java' },
+        { component: <FaPython className="" />, name: 'Python' },
         {
-            component: <SiDask className="mx-2 sm:mx-10" />,
+            component: <SiDask className="" />,
             name: 'Dask Dataframe',
         },
-        { component: <GrSwift className="mx-2 sm:mx-10" />, name: 'Swift' },
+        { component: <GrSwift className="" />, name: 'Swift' },
         {
-            component: <SiTailwindcss className="mx-2 sm:mx-10" />,
+            component: <SiTailwindcss className="" />,
             name: 'Tailwind CSS',
         },
         {
-            component: <SiExpress className="mx-2 sm:mx-10" />,
+            component: <SiExpress className="" />,
             name: 'Express.js',
         },
-        { component: <SiMongodb className="mx-2 sm:mx-10" />, name: 'MongoDB' },
-        { component: <SiAxios className="mx-2 sm:mx-10" />, name: 'Axios' },
+        { component: <SiMongodb className="" />, name: 'MongoDB' },
+        { component: <SiAxios className="" />, name: 'Axios' },
         {
-            component: <SiFramer className="mx-2 sm:mx-10" />,
+            component: <SiFramer className="" />,
             name: 'Framer Motion',
         },
-        { component: <FaAws className="mx-2 sm:mx-10" />, name: 'AWS' },
-        { component: <FaGitAlt className="mx-2 sm:mx-10" />, name: 'Git' },
-        { component: <DiMysql className="mx-2 sm:mx-10" />, name: 'MySQL' },
-        { component: <SiAlteryx className="mx-2 sm:mx-10" />, name: 'Alteryx' },
+        { component: <FaAws className="" />, name: 'AWS' },
+        { component: <FaGitAlt className="" />, name: 'Git' },
+        { component: <DiMysql className="" />, name: 'MySQL' },
+        { component: <SiAlteryx className="" />, name: 'Alteryx' },
         {
-            component: <SiPowerautomate className="mx-2 sm:mx-10" />,
-            name: 'PowerAutomate',
+            component: <SiPowerautomate className="" />,
+            name: 'Power Automate',
         },
         {
-            component: <SiStyledcomponents className="mx-2 sm:mx-10" />,
+            component: <SiStyledcomponents className="" />,
             name: 'Styled\nComponents',
         },
         {
-            component: <SiSupabase className="mx-2 sm:mx-10" />,
+            component: <SiSupabase className="" />,
             name: 'Supabase',
         },
         {
-            component: <SiRailway className="mx-2 sm:mx-10" />,
+            component: <SiRailway className="" />,
             name: 'Railway',
         },
         {
-            component: <TbBrandThreejs className="mx-2 sm:mx-10" />,
+            component: <TbBrandThreejs className="" />,
             name: 'Three.js',
         },
     ];
