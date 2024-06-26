@@ -37,7 +37,13 @@ export function PostPreview({
     return (
         <div>
             <div className="mb-1">
-                {<CoverImageCarausel slug={slug} title={title} src={coverImage} />}
+                {
+                    <CoverImageCarausel
+                        slug={slug}
+                        title={title}
+                        src={coverImage}
+                    />
+                }
             </div>
             <h3 className="mb-3 text-3xl leading-snug">
                 <Link href={`/posts/${slug}`} className="hover:underline">
@@ -46,12 +52,13 @@ export function PostPreview({
             </h3>
 
             <div className="mb-4 text-lg">
-                {techStack && techStack.map((tech) => (
-                    <span key={tech} className="mr-2">
-                        {tech}
-                    </span>
-                ))}
-               {/*<DateFormatter dateString={date} />*/}
+                {techStack &&
+                    techStack.map((tech) => (
+                        <span key={tech} className="mr-2">
+                            {tech}
+                        </span>
+                    ))}
+                {/*<DateFormatter dateString={date} />*/}
             </div>
             <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
             {/*<Avatar name={author.name} picture={author.picture} />*/}

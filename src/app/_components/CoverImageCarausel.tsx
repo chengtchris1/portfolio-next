@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import cn from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -24,57 +24,49 @@ type Props = {
 };
 
 const CoverImageCarausel = ({ title, src, slug }: Props) => {
-const images = Array.isArray(src) ? src : [src];
-const carausel = (<Swiper
-                className="w-full flex items-center justify-center"
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-                effect={'cards'}
+    const images = Array.isArray(src) ? src : [src];
+    const carausel = (
+        <Swiper
+            className="flex w-full items-center justify-center"
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            effect={'cards'}
+            modules={[Pagination, Scrollbar, EffectCards]}
+            pagination={{ clickable: true }}
+            loop={false}
+            autoHeight={true}
+            grabCursor={true}
+            cardsEffect={{
+                slideShadows: false,
+                perSlideOffset: 1,
+                perSlideRotate: 0,
+                rotate: true,
+            }}
 
-                modules={[Pagination, Scrollbar, EffectCards]}
-                pagination={{ clickable: true }}
-                loop={false}
-                autoHeight={true}
-                grabCursor={true}
-                cardsEffect={{
-                    slideShadows: false,
-                    perSlideOffset: 1,
-                    perSlideRotate: 0,
-                    rotate: true,
-                }}
-
-                // scrollbar={{ draggable: true }}
-            >
-                {images.map((src, i) =>{
-                return (<SwiperSlide key={i}>
-                    <div className="flex h-full w-full overflow-clip items-center justify-center">
-                        <div className='mb-12 w-[1300px] rounded-2xl overflow-clip'>
-                            <Image
-                                src={src}
-                                alt={title}
-                                width={1300}
-                                height={630}
-                            />
+            // scrollbar={{ draggable: true }}
+        >
+            {images.map((src, i) => {
+                return (
+                    <SwiperSlide key={i}>
+                        <div className="flex h-full w-full items-center justify-center overflow-clip">
+                            <div className="mb-12 w-[1300px] overflow-clip rounded-2xl">
+                                <Image
+                                    src={src}
+                                    alt={title}
+                                    width={1300}
+                                    height={630}
+                                />
+                            </div>
                         </div>
-                    </div>
-                </SwiperSlide>)}
-                )}
-
-
-            </Swiper>
-            )
+                    </SwiperSlide>
+                );
+            })}
+        </Swiper>
+    );
 
     return (
         <div className="sm:mx-0">
-            {slug ? (
-                <>
-                    {carausel}
-                </>
-            ) : (
-                <>
-                {carausel}
-                </>
-            )}
+            {slug ? <>{carausel}</> : <>{carausel}</>}
         </div>
     );
 };

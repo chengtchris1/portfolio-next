@@ -64,7 +64,7 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <div className="fixed z-50 grid h-10 w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%] z-[1000]">
+                    <div className="fixed z-50 z-[1000] grid h-10 w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
                         <Container>
                             <div className="text-2x ml-0 w-full font-bold">
                                 Chris Cheng

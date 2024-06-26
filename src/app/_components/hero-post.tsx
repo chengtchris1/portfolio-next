@@ -24,7 +24,11 @@ export function HeroPost({
     return (
         <section>
             <div className="mb-8 md:mb-16">
-                <CoverImageCarausel title={title} src={coverImage} slug={slug} />
+                <CoverImageCarausel
+                    title={title}
+                    src={coverImage}
+                    slug={slug}
+                />
             </div>
             <div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                 <div>
