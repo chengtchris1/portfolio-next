@@ -64,7 +64,7 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <div className="fixed z-50 z-[1000] grid h-10 w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
+                    <div className="fixed z-[1000] grid h-10 w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
                         <Container>
                             <div className="text-2x ml-0 w-full font-bold">
                                 Chris Cheng
@@ -85,7 +85,7 @@ export default function RootLayout({
                         </Container>
                     </div>
                     {children}
-                    <div className="fixed bottom-0 flex h-10 w-screen flex-row items-center justify-end bg-black">
+                    <div className="fixed bottom-0 flex h-10 w-screen flex-row items-center justify-end bg-black z-[1000]">
                         <Container>
                             <div className="flex flex-row items-center justify-end">
                                 <Link
