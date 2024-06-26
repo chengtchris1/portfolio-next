@@ -57,7 +57,7 @@ const IconCard = ({ icon, label }: { icon: any; label: string }) => {
 
     lastUsedGradientIndex = (lastUsedGradientIndex + 1) % gradients.length;
     return (
-        <div className="mockup-window border border-gray-600 drop-shadow-xl">
+        <div className="mockup-window border border-gray-600 bg-slate-900 drop-shadow-xl">
             <div className={gradientBg}>
                 <div className="m-0 p-0 text-5xl text-white drop-shadow-2xl">
                     {icon}
