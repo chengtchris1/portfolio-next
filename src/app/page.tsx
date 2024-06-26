@@ -28,19 +28,19 @@ export default function Index() {
                     fourthColor="127,0,255"
                     pointerColor="20,184,166"
                     interactive={true}
-                    size="40%"
+                    blendingValue="color-burn"
+                    //size="100%"
                 >
-                    <div className="absolute left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white">
+                    <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white md:left-[50%]">
                         <h1 className="font-light tracking-tighter">
-                            <p className="bg-gradient-to-b from-white/80 to-white/20 bg-clip-text text-transparent drop-shadow-2xl">
-                                <span className="font-bold italic">Hi.</span>
-                                <br />
-                                <span className="italic">I'm Chris.</span>
-                            </p>
+                            <div className="bg-gradient-to-b from-white/90 to-white/30 bg-clip-text text-transparent mix-blend-color-dodge drop-shadow-2xl">
+                                <div className="font-bold italic">Hi.</div>
+                                <div className="italic">I'm Chris.</div>
+                            </div>
                         </h1>
                     </div>
                     <Image
-                        className="contrast-more-50 opacity-30 brightness-200 filter"
+                        className="opacity-80"
                         src={bg}
                         quality={100}
                         priority={true}

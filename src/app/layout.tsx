@@ -66,12 +66,15 @@ export default function RootLayout({
                 <div className="min-h-screen">
                     <div className="fixed z-[1000] grid h-10 w-full items-center justify-items-center bg-black backdrop-blur backdrop-brightness-[70%]">
                         <Container>
-                            <div className="text-2x ml-0 w-full font-bold">
-                                Chris Cheng
-                            </div>
-                            <div className="col-span-1">{/*<Navbar />*/}</div>
-                            <div className="col-span-2 mr-0 flex flex-row justify-self-end sm:mr-20">
-                                {/*<Link
+                            <Link href={'/'}>
+                                <div className="text-2x ml-0 w-full font-bold">
+                                    Chris Cheng
+                                </div>
+                                <div className="col-span-1">
+                                    {/*<Navbar />*/}
+                                </div>
+                                <div className="col-span-2 mr-0 flex flex-row justify-self-end sm:mr-20">
+                                    {/*<Link
                                 href={
                                     'https://www.linkedin.com/in/chengtchris/'
                                 }
@@ -81,7 +84,8 @@ export default function RootLayout({
                             <Link href={'https://github.com/chengtchris1'}>
                                 <LuGithub className="mx-3" />
                             </Link>*/}
-                            </div>
+                                </div>
+                            </Link>
                         </Container>
                     </div>
                     {children}

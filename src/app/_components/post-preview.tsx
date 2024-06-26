@@ -17,6 +17,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import TechStack from './techStack';
 type Props = {
     title: string;
     coverImage: string | [string];
@@ -52,16 +53,9 @@ export function PostPreview({
             </h3>
 
             <div className="mb-4 text-lg">
-                {techStack &&
-                    techStack.map((tech) => (
-                        <span key={tech} className="mr-2">
-                            {tech}
-                        </span>
-                    ))}
-                {/*<DateFormatter dateString={date} />*/}
+                <TechStack techStack={techStack} />
             </div>
             <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-            {/*<Avatar name={author.name} picture={author.picture} />*/}
         </div>
     );
 }
