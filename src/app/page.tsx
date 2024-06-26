@@ -23,13 +23,13 @@ export default function Index() {
                     gradientBackgroundEnd="rgb(0,0,0)"
                     firstColor="20,184,166"
                    // secondColor="255,255,255"
-                    thirdColor="255,192,203"
+                    thirdColor="20,184,166"
                     fifthColor="56,189,248"
                     fourthColor="127,0,255"
-                    pointerColor="20,184,166"
+                    //pointerColor="255, 255, 255"
                     interactive={true}
-                    blendingValue="color-burn"
-                    //size="100%"
+                    blendingValue="color-dodge"
+                    size="80%"
                 >
                     <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white md:left-[50%]">
                         <h1 className="font-light tracking-tighter">
