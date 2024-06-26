@@ -22,7 +22,7 @@ export default function Index() {
                     gradientBackgroundStart="rgb(0,0,0)"
                     gradientBackgroundEnd="rgb(0,0,0)"
                     firstColor="20,184,166"
-                    secondColor="255,255,255"
+                   // secondColor="255,255,255"
                     thirdColor="255,192,203"
                     fifthColor="56,189,248"
                     fourthColor="127,0,255"
