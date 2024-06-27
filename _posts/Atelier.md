@@ -2,9 +2,10 @@
 title: 'Atelier'
 excerpt: 'Atelier is an extensive e-commerce platform, consisting of a distinct front-end and back-end component.'
 coverImage:
-    - '/assets/portfolio/ProductOverview.gif'
-    - '/assets/portfolio/RelatedItems.gif'
-    - '/assets/portfolio/Reviews.gif'
+    - '/assets/portfolio/ProductOverview.png'
+    - '/assets/portfolio/RelatedItems.png'
+    - '/assets/portfolio/Ensemble.png'
+    - '/assets/portfolio/Reviews.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
     name: Joe Haddad
