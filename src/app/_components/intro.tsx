@@ -2,7 +2,7 @@ import { CMS_NAME } from '@/lib/constants';
 import Carausel from '@/app/_components/carausel';
 export function Intro() {
     return (
-        <section className="mb-16 mt-16 flex flex-col items-start pb-8 md:flex-row lg:mb-12 lg:justify-between">
+        <section className="mb-16 flex flex-col items-start pb-8 md:flex-row lg:mb-12 lg:justify-between">
             <div className="flex h-[450px] w-full flex-col items-center justify-center">
                 <div className="m-0 w-full p-0">
                     <h1 className="w-full p-5 pb-0 pl-0 pt-8 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8">
