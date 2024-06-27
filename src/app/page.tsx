@@ -31,7 +31,7 @@ export default function Index() {
                     blendingValue="color-dodge"
                     size="100%"
                 >
-                    <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white mix-blend-screen md:left-[50%]">
+                    <div className="absolute left-[40%]  top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-9xl text-white mix-blend-screen md:left-[42%] lg:left-[50%]">
                         <div className="font-light tracking-tighter">
                             <div className="bg-gradient-to-t from-teal-400/95 to-indigo-500/95 bg-clip-text text-transparent drop-shadow-2xl">
                                 <div className="font-bold italic">Hi.</div>
