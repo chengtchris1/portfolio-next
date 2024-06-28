@@ -30,26 +30,34 @@ const gradientStyle = {
     WebkitBackgroundClip: 'text',
     display: 'inline-block',
 };
-const gradients = [
-    'from-teal-400 to-green-500',
-    'from-pink-500 to-orange-400',
-    'from-indigo-500 to-purple-600',
-    'from-red-500 to-yellow-500',
-    'from-lime-500 to-emerald-500',
-    'from-cyan-500 to-blue-500',
-    'from-violet-500 to-pink-500',
-    'from-fuchsia-500 to-purple-600',
-    'from-orange-400 to-red-500',
-    'from-green-500 to-lime-400',
-    'from-blue-500 to-purple-500',
-    'from-yellow-400 to-orange-500',
-    'from-purple-400 to-pink-500',
-    'from-green-400 to-cyan-500',
-    'from-blue-400 to-indigo-500',
-    'from-red-400 to-pink-500',
-    'from-teal-500 to-green-600',
-    'from-purple-500 to-indigo-600',
-];
+let gradients = [
+    'from-teal-600 to-teal-700', // Teal
+    'from-orange-500 to-red-700', // Orange to Red
+    'from-cyan-600 to-blue-700', // Cyan to Blue
+    'from-pink-500 to-purple-700', // Pink to Purple
+    'from-lime-500 to-green-700', // Lime to Green
+    'from-purple-600 to-indigo-800', // Purple to Indigo
+    'from-yellow-400 to-orange-600', // Yellow to Orange
+    'from-blue-500 to-indigo-700', // Blue to Indigo
+    // Red to Pink ///
+    'from-yellow-500 to-orange-700',
+    'from-blue-700 to-sky-800', // Teal to Cyan
+    'from-purple-500 to-pink-800', // Purple to Pink
+    'from-green-500 to-teal-700', // Green to Teal
+    'from-orange-400 to-red-600', // Orange to Red
+    'from-cyan-500 to-blue-700', // Cyan to Blue
+
+    'from-red-500 to-pink-700',
+
+    // Yellow to Orange ///
+    'from-sky-500 to-cyan-700', // Sky to Cyan
+    'from-pink-600 to-purple-800', // Pink to Purple
+    'from-teal-500 to-green-800', // Teal to Green
+    'from-cyan-600 to-blue-800', // Cyan to Blue
+    'from-purple-600 to-indigo-800', // Purple to Indigo
+].reverse();
+
+
 let lastUsedGradientIndex = 0;
 
 const IconCard = ({ icon, label }: { icon: any; label: string }) => {
