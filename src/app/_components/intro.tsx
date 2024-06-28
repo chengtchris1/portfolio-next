@@ -22,7 +22,7 @@ export function Intro() {
                 oversight.
                 <br />
                 <br />
-                In my previous career, I leveraged cutting-edge cools such as
+                In my previous career, I leveraged cutting-edge tools such as
                 PowerAutomate and UI Path: tools which my higher-ups had little
                 experience with. Recently, I've been given the opportunity to
                 work on various projects which have me hone my craft as a
