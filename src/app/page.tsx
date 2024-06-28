@@ -48,7 +48,7 @@ export default function Index() {
                 </BackgroundGradientAnimation>
             </div>
 
-            <div className="w-full bg-black text-black">
+            <div className="w-full bg-white text-black">
                 <Container>
                     <Intro />
                 </Container>
