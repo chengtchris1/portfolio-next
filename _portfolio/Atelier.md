@@ -6,18 +6,17 @@ coverImage:
     - '/assets/portfolio/RelatedItems.png'
     - '/assets/portfolio/Ensemble.png'
     - '/assets/portfolio/Reviews.png'
-date: '2020-03-16T05:35:07.322Z'
+date: '2024-06-16T05:35:07.322Z'
 ogImage:
-    url: '/assets/blog/preview/cover.jpg'
+    url: '/assets/portfolio/ProductOverview.png'
 techStack:
     - React
-    - Styled Components
     - Axios
     - Jest
-    - Node JS
     - MongoDB
-    - Python
+    - Styled Components
     - Express
+    - Python
     - Dask Dataframe
     - AWS EC2
 ---

@@ -5,9 +5,7 @@ coverImage:
     - '/assets/portfolio/landingPageGif.gif'
     - '/assets/portfolio/Carousel.gif'
 
-date: '2020-03-18T05:35:07.322Z'
-ogImage:
-    url: '/assets/blog/hello-world/cover.jpg'
+date: '2024-06-18T05:35:07.322Z'
 techStack:
     - 'Javascript'
     - 'React'

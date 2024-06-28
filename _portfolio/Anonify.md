@@ -5,9 +5,9 @@ coverImage:
     - '/assets/portfolio/AnonifyPL.png'
     - '/assets/portfolio/AnonifyLanding.png'
 
-date: '2020-03-19T05:35:07.322Z'
+date: '2024-06-19T05:35:07.322Z'
 ogImage:
-    url: '/assets/blog/dynamic-routing/cover.jpg'
+    url: '/assets/portfolio/AnonifyPL.png'
 techStack:
     - 'Javascript'
     - 'React'
