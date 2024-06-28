@@ -56,7 +56,7 @@ export default function Index() {
             <div className="flex flex-col text-white">
                 <Container>
                     <h1 className="text-6xl font-bold">Some tech I used</h1>
-                    <div className="relative flex h-[1350px] flex-row items-start justify-start overflow-hidden sm:h-[1700px]">
+                    <div className="relative flex h-[1300px] flex-row items-start justify-start overflow-hidden sm:h-[1700px]">
                         <ParallaxScroll images={images} />
                         <div className="absolute inset-0 h-1/6 bg-gradient-to-b from-black"></div>
                         <div className="absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-black"></div>
