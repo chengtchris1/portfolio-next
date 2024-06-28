@@ -20,12 +20,8 @@ export default function Carausel() {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 effect={'cards'}
-                autoplay={{
-                    delay: 2000,
-                    disableOnInteraction: true,
-                    pauseOnMouseEnter: true,
-                }}
-                modules={[Pagination, Scrollbar, Autoplay, EffectCards]}
+                initialSlide={3}
+                modules={[Pagination, Scrollbar, EffectCards]}
                 pagination={{ clickable: true }}
                 loop={false}
                 autoHeight={true}
