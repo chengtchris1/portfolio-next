@@ -141,7 +141,7 @@ export const ParallaxScroll = ({
     const translateSecond = useTransform(
         scrollYProgress,
         [0.23, 0.7],
-        [0, 152]
+        [0, 151]
     );
     const translateThird = useTransform(
         scrollYProgress,
