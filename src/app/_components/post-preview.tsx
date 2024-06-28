@@ -59,7 +59,7 @@ export function PostPreview({
             <div>
                 <Link href={`/portfolio/${slug}`}>
                     <button className="rounded-2xl border p-2 text-sm transition duration-300 hover:bg-white hover:text-black">
-                        More info
+                        Expand
                     </button>
                 </Link>
             </div>
