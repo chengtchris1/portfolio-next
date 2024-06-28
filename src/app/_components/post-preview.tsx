@@ -35,11 +35,11 @@ export function PostPreview({
                     />
                 }
             </div>
-            <h3 className="mb-3 text-3xl leading-snug">
+            <h2 className="mb-3 text-5xl leading-snug font-bold">
                 <Link href={`/portfolio/${slug}`} className="hover:underline">
                     {title}
                 </Link>
-            </h3>
+            </h2>
 
             <div className="mb-4 text-lg">
                 <TechStack techStack={techStack} />
