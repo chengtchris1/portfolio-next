@@ -1,7 +1,7 @@
 import Avatar from '@/app/_components/avatar';
-import CoverImageCarausel from './CoverImageCarausel';
 import { type Author } from '@/interfaces/author';
 import Link from 'next/link';
+import CoverImageCarausel from './CoverImageCarausel';
 import DateFormatter from './date-formatter';
 
 type Props = {

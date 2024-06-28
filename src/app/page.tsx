@@ -1,15 +1,12 @@
 import Container from '@/app/_components/container';
-import { HeroPost } from '@/app/_components/hero-post';
 import { Intro } from '@/app/_components/intro';
 import { MoreStories } from '@/app/_components/more-stories';
-import { getAllPortfolio } from '@/lib/api';
-import Hero3DCanvas from '@/app/_components/hero3d';
-import Carausel from './_components/carausel';
-import Image from 'next/image';
 import bg from '@/assets/hero-bg.png';
+import { getAllPortfolio } from '@/lib/api';
+import { Metadata } from 'next';
+import Image from 'next/image';
 import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { ParallaxScroll } from './_components/parallax-scroll';
-import { Metadata } from 'next';
 export default function Index() {
     const allPortfolioItems = getAllPortfolio();
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];

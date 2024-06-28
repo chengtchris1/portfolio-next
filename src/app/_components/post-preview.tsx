@@ -1,22 +1,11 @@
 'use client';
 import { type Author } from '@/interfaces/author';
 import Link from 'next/link';
-import Avatar from './avatar';
-import CoverImageCarausel from './CoverImageCarausel';
-import DateFormatter from './date-formatter';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-    Navigation,
-    Pagination,
-    Scrollbar,
-    EffectCoverflow,
-    Autoplay,
-    EffectCards,
-} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import CoverImageCarausel from './CoverImageCarausel';
 import TechStack from './techStack';
 type Props = {
     title: string;

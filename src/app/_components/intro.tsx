@@ -1,4 +1,3 @@
-import { CMS_NAME } from '@/lib/constants';
 import Carausel from '@/app/_components/carausel';
 export function Intro() {
     return (
@@ -11,9 +10,6 @@ export function Intro() {
                 </div>
                 <div className="flex-grow-1 flex h-full w-full items-center justify-center drop-shadow-2xl">
                     <Carausel />
-                    {/*<div className="h-52 w-52 overflow-clip bg-opacity-50 bg-gradient-to-br from-green-400 to-blue-600 mb-10 border-y-4 border-x-4 border-b-8 border-black drop-shadow-md">
-                    <img className="p-0" src={'/assets_new/portrait.png'} />
-                    </div>*/}
                 </div>
             </div>
             <p className="mt-0 w-fit text-left text-lg md:mt-12 md:p-10">

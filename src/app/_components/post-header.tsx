@@ -1,8 +1,6 @@
-import Avatar from './avatar';
-import CoverImageCarausel from './CoverImageCarausel';
-import DateFormatter from './date-formatter';
 import { PostTitle } from '@/app/_components/post-title';
 import { type Author } from '@/interfaces/author';
+import CoverImageCarausel from './CoverImageCarausel';
 import TechStack from './techStack';
 type Props = {
     title: string;

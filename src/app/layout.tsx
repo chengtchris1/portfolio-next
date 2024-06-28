@@ -1,13 +1,10 @@
 import Footer from '@/app/_components/footer';
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '@/lib/constants';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Navbar from '@/app/_components/navbar';
-import './globals.css';
+import Link from 'next/link';
 import { FaLinkedin } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
-import Link from 'next/link';
 import Container from './_components/container';
+import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 /*
 export const metadata: Metadata = {

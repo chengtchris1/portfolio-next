@@ -1,8 +1,6 @@
 'use client';
-import * as React from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import * as React from 'react';
 //import { Icons } from "@/components/icons"
 import {
     NavigationMenu,
@@ -11,7 +9,6 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
 const components: { title: string; href: string; description: string }[] = [

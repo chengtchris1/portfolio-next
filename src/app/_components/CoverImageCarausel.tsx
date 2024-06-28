@@ -1,22 +1,12 @@
 'use client';
-import cn from 'classnames';
-import Link from 'next/link';
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-    Navigation,
-    Pagination,
-    Scrollbar,
-    EffectCoverflow,
-    Autoplay,
-    EffectCards,
-} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { EffectCards, Pagination, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './carauselStyles.css';
-import { useEffect } from 'react';
 type Props = {
     title: string;
     src: string | [string];

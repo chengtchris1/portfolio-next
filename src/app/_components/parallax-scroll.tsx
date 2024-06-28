@@ -1,28 +1,25 @@
 'use client';
-import { useScroll, useTransform } from 'framer-motion';
-import { useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-import { IoLogoJavascript, IoLogoReact } from 'react-icons/io5';
-import { FaJava, FaPython, FaGitAlt } from 'react-icons/fa';
-import {
-    SiTailwindcss,
-    SiExpress,
-    SiMongodb,
-    SiFramer,
-    SiAlteryx,
-    SiPowerautomate,
-    SiStyledcomponents,
-    SiAxios,
-    SiSupabase,
-    SiRailway,
-    SiDask,
-} from 'react-icons/si';
-import { FaAws } from 'react-icons/fa6';
 import { DiMysql } from 'react-icons/di';
+import { FaGitAlt, FaJava, FaPython } from 'react-icons/fa';
+import { FaAws } from 'react-icons/fa6';
 import { GrSwift } from 'react-icons/gr';
+import { IoLogoJavascript, IoLogoReact } from 'react-icons/io5';
+import {
+    SiAlteryx,
+    SiAxios,
+    SiDask,
+    SiExpress,
+    SiFramer,
+    SiMongodb,
+    SiPowerautomate,
+    SiRailway,
+    SiStyledcomponents,
+    SiSupabase,
+    SiTailwindcss,
+} from 'react-icons/si';
 import { TbBrandThreejs } from 'react-icons/tb';
 
 let gradients = [
@@ -51,7 +48,6 @@ let gradients = [
     'from-cyan-600 to-blue-800', // Cyan to Blue
     'from-purple-600 to-indigo-800', // Purple to Indigo
 ].reverse();
-
 
 let lastUsedGradientIndex = 0;
 
