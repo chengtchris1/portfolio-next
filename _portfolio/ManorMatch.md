@@ -4,7 +4,8 @@ excerpt: 'ManorMatch is a full-stack application designed to seamlessly connect 
 coverImage:
     - '/assets/portfolio/landingPageGif.gif'
     - '/assets/portfolio/Carousel.gif'
-
+ogImage:
+    url: '/assets/portfolio/landingPageGif.gif'
 date: '2024-06-18T05:35:07.322Z'
 techStack:
     - 'Javascript'
