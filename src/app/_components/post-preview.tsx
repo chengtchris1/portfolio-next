@@ -56,6 +56,11 @@ export function PostPreview({
                 <TechStack techStack={techStack} />
             </div>
             <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
+            <div>
+                <button className="rounded-2xl border p-2 text-sm transition duration-300 hover:bg-white hover:text-black">
+                    More info
+                </button>
+            </div>
         </div>
     );
 }

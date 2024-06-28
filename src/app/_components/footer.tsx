@@ -7,16 +7,15 @@ export function Footer() {
             <Container>
                 <div className="flex flex-col items-center py-28">
                     <Link href={'https://www.linkedin.com/in/chengtchris/'}>
-                    <h4 className="text-center text-4xl font-bold leading-tight tracking-tighter mb-1 lg:w-1/4 lg:text-left hover:underline">
-                        LinkedIn
-                    </h4>
+                        <h4 className="mb-1 text-center text-4xl font-bold leading-tight tracking-tighter hover:underline lg:w-1/4 lg:text-left">
+                            LinkedIn
+                        </h4>
                     </Link>
-                    <Link href={ 'https://github.com/chengtchris1' }>
-                    <h4 className="text-center text-4xl font-bold leading-tight tracking-tighter mb-1 lg:w-1/4 lg:text-left hover:underline">
-                        Github
-                    </h4>
+                    <Link href={'https://github.com/chengtchris1'}>
+                        <h4 className="mb-1 text-center text-4xl font-bold leading-tight tracking-tighter hover:underline lg:w-1/4 lg:text-left">
+                            Github
+                        </h4>
                     </Link>
-
                 </div>
             </Container>
         </footer>

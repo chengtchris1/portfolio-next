@@ -50,7 +50,7 @@ export default function Carausel() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
-                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br to-orange-400 from-red-600 drop-shadow-md">
+                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-red-600 to-orange-400 drop-shadow-md">
                             <img
                                 className="p-0"
                                 src={'/assets_new/portrait.png'}
@@ -70,7 +70,7 @@ export default function Carausel() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
-                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br to-green-400 from-blue-600 drop-shadow-md">
+                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-blue-600 to-green-400 drop-shadow-md">
                             <img
                                 className="p-0"
                                 src={'/assets_new/portrait.png'}
@@ -78,9 +78,9 @@ export default function Carausel() {
                         </div>
                     </div>
                 </SwiperSlide>
-                                <SwiperSlide>
+                <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
-                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br to-sky-700 from-fuchsia-600 drop-shadow-md">
+                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-fuchsia-600 to-sky-700 drop-shadow-md">
                             <img
                                 className="p-0"
                                 src={'/assets_new/portrait.png'}
@@ -100,7 +100,7 @@ export default function Carausel() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
-                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br to-green-400 from-blue-600 drop-shadow-md">
+                        <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-blue-600 to-green-400 drop-shadow-md">
                             <img
                                 className="p-0"
                                 src={'/assets_new/portrait.png'}
