@@ -9,6 +9,7 @@ import Image from 'next/image';
 import bg from '@/assets/hero-bg.png';
 import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { ParallaxScroll } from './_components/parallax-scroll';
+import { Metadata } from 'next';
 export default function Index() {
     const allPortfolioItems = getAllPortfolio();
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -77,4 +78,12 @@ export default function Index() {
             </div>
         </main>
     );
+}
+export function generateMetadata({ params }: Params): Metadata {
+
+    const title = `Chris Cheng | Fullstack Dev`;
+
+    return {
+        title,
+    };
 }

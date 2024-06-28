@@ -26,7 +26,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <link
+                {/*<link
                     rel="apple-touch-icon"
                     sizes="180x180"
                     href="/favicon/apple-touch-icon.png"
@@ -50,6 +50,7 @@ export default function RootLayout({
                     color="#000000"
                 />
                 <link rel="shortcut icon" href="/favicon/favicon.ico" />
+                */}
                 <meta name="msapplication-TileColor" content="#000000" />
                 <meta
                     name="msapplication-config"
