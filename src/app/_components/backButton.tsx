@@ -6,7 +6,7 @@ export default function BackButton() {
 
     return (
         <button
-            className="border flex w-32 p-1 rounded-2xl items-center justify-evenly text-lg hover:bg-white hover:text-black transition duration-300"
+            className="border flex w-[6.5rem] md:w-32 p-0 rounded-2xl items-center justify-evenly text-sm md:text-lg hover:bg-white hover:text-black transition duration-300"
             onClick={() => router.back()}
         >
             <span className="text-2xl">
