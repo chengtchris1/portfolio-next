@@ -26,7 +26,7 @@ export function PostHeader({
                 {/*<Avatar name={author.name} picture={author.picture} />*/}
                 <TechStack techStack={techStack ?? []} />
             </div>
-            <div className="mb-8 sm:mx-0 md:mb-2">
+            <div className="mb-2 sm:mx-0 md:mb-2">
                 <CoverImageCarausel title={title} src={coverImage} />
             </div>
             <div className="mx-auto max-w-2xl">
