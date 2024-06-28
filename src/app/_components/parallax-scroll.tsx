@@ -24,12 +24,7 @@ import { FaAws } from 'react-icons/fa6';
 import { DiMysql } from 'react-icons/di';
 import { GrSwift } from 'react-icons/gr';
 import { TbBrandThreejs } from 'react-icons/tb';
-const gradientStyle = {
-    background: 'linear-gradient(to right, blue, purple)',
-    WebkitTextFillColor: 'transparent',
-    WebkitBackgroundClip: 'text',
-    display: 'inline-block',
-};
+
 let gradients = [
     'from-teal-600 to-teal-700', // Teal
     'from-orange-500 to-red-700', // Orange to Red
