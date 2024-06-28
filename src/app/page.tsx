@@ -39,7 +39,7 @@ export default function Index() {
                         </div>
                     </div>
                     <Image
-                        className="opacity-90"
+                        className="opacity-80"
                         src={bg}
                         quality={100}
                         priority={true}
