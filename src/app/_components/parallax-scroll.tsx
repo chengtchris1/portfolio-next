@@ -27,7 +27,7 @@ import { TbBrandThreejs } from 'react-icons/tb';
 
 let gradients = [
     'from-teal-600 to-teal-700', // Teal
-    'from-orange to-red-700', // Orange to Red
+    'from-orange-400 to-red-700', // Orange to Red
     'from-cyan-600 to-blue-700', // Cyan to Blue
     'from-pink-500 to-purple-700', // Pink to Purple
     'from-lime-500 to-green-700', // Lime to Green
