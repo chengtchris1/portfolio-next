@@ -27,8 +27,8 @@ export function PostPreview({
     techStack,
 }: Props) {
     return (
-        <div>
-            <div className="mb-1">
+        <div className='mt-4 border border-slate-900 rounded-2xl bg-gradient-to-r from-black to-slate-900'>
+            <div className="mb-1 -mt-11">
                 {
                     <CoverImageCarausel
                         slug={slug}
@@ -37,17 +37,17 @@ export function PostPreview({
                     />
                 }
             </div>
-            <h2 className="mb-3 text-5xl leading-snug font-bold">
+            <h2 className="mx-4 mb-3 text-5xl leading-snug font-bold">
                 <Link href={`/portfolio/${slug}`} className="hover:underline">
                     {title}
                 </Link>
             </h2>
 
-            <div className="mb-4 text-lg">
+            <div className="m-4 text-lg">
                 <TechStack techStack={techStack} />
             </div>
-            <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-            <div>
+            <p className="m-4 text-lg leading-relaxed">{excerpt}</p>
+            <div className='relative bottom-0 left-0 m-4'>
                 <Link href={`/portfolio/${slug}`}>
                     <button className="rounded-2xl border p-2 text-sm transition duration-300 hover:bg-white hover:text-black">
                         <div className="flex items-center space-x-1">
