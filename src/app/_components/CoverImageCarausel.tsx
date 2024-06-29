@@ -38,7 +38,7 @@ const CoverImageCarausel = ({ title, src, slug }: Props) => {
             {images.map((src, i) => {
                 return (
                     <SwiperSlide key={i}>
-                        <div className="mockup-window mb-6 flex h-full w-full items-center justify-center overflow-clip border border-gray-900 bg-slate-950">
+                        <div className="mockup-window mb-6 flex h-full w-full items-center justify-center overflow-clip border border-slate-900 bg-slate-900">
                             <div className="aspect-[2/1] overflow-hidden">
                                 <Image
                                     src={src}

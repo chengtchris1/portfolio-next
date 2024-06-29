@@ -27,7 +27,7 @@ export function PostPreview({
     techStack,
 }: Props) {
     return (
-        <div className='mt-4 border border-slate-900 rounded-2xl bg-gradient-to-r from-black to-slate-900'>
+        <div className='mt-4 rounded-2xl bg-gradient-to-r from-black to-slate-950'>
             <div className="mb-1 -mt-11">
                 {
                     <CoverImageCarausel
