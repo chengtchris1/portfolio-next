@@ -25,7 +25,7 @@ export default function Index() {
                     //pointerColor="255, 255, 255"
                     interactive={true}
                     blendingValue="color-dodge"
-                    size="100%"
+                    size="90%"
                 >
                     <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-8xl text-white mix-blend-screen md:left-[42%] lg:left-[50%] lg:text-9xl">
                         <div className="font-light tracking-tighter">
@@ -36,7 +36,7 @@ export default function Index() {
                         </div>
                     </div>
                     <Image
-                        className="opacity-80"
+                        className="opacity-60"
                         src={bg}
                         quality={100}
                         priority={true}
