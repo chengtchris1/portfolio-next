@@ -7,6 +7,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import CoverImageCarausel from './CoverImageCarausel';
 import TechStack from './techStack';
+import { FaChevronCircleRight } from "react-icons/fa";
+
 type Props = {
     title: string;
     coverImage: string | [string];
@@ -48,7 +50,11 @@ export function PostPreview({
             <div>
                 <Link href={`/portfolio/${slug}`}>
                     <button className="rounded-2xl border p-2 text-sm transition duration-300 hover:bg-white hover:text-black">
-                        Expand
+                          <div className="flex items-center space-x-1">
+     <span>More details</span>
+    <FaChevronCircleRight />
+
+  </div>
                     </button>
                 </Link>
             </div>
