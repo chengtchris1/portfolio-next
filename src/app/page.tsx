@@ -28,19 +28,21 @@ export default function Index() {
                     blendingValue="color-dodge"
                     size="90%"
                 >
-                    <div className="absolute left-[40%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-7xl text-white mix-blend-screen md:left-[42%] lg:left-[50%] lg:text-9xl">
+                    <div className="absolute left-[58%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
                         <div className="font-light tracking-tighter">
                             <div className="bg-gradient-to-t from-teal-400/95 to-indigo-500/95 bg-clip-text text-transparent drop-shadow-2xl">
-                                <div className="text-[3.5rem] md:text-7xl font-bold text-blue italic">
+                                <div className="font-bold text-blue italic">
                                     <FlipWords
                                         className="opacity-60"
-                                        words={['Hello', '你好', 'こんにちは']}
+                                        words={[
+                                            'Hello,',
+                                            '你好,',
+                                            'こんにちは,',
+                                        ]}
                                         duration={1000}
                                     />
                                 </div>
-                                <div className="pl-[.35rem] font-bold">
-                                    I'm Chris.
-                                </div>
+                                <div className="px-2 font-bold">I'm Chris.</div>
                             </div>
                         </div>
                     </div>
