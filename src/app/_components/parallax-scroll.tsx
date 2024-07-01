@@ -131,17 +131,17 @@ export const ParallaxScroll = ({
     ];
     const translateFirst = useTransform(
         scrollYProgress,
-        [0.23, 0.7],
+        [0.18, 0.7],
         [0, -200]
     );
     const translateSecond = useTransform(
         scrollYProgress,
-        [0.23, 0.7],
+        [0.18, 0.7],
         [0, 151]
     );
     const translateThird = useTransform(
         scrollYProgress,
-        [0.23, 0.7],
+        [0.18, 0.7],
         [0, -200]
     );
     const firstPart = icons.slice(0, 7);
