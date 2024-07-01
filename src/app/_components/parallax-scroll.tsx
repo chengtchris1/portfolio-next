@@ -31,17 +31,18 @@ let gradients = [
     'from-red-500 to-pink-700',
     'from-cyan-500 to-blue-700', // Cyan to Blue
     'from-blue-500 to-purple-600', // Orange to Red //Express
-    'from-green-500 to-teal-700', // Green to Teal
+
+       'from-lime-500 to-green-700', // Lime to Green
     'from-purple-500 to-pink-800', // Purple to Pink
     'from-blue-700 to-sky-800', // Teal to Cyan
     'from-yellow-500 to-orange-700',
     'from-blue-500 to-indigo-700', // Blue to Indigo
     'from-purple-400 to-orange-600', // Yellow to Orange
     'from-purple-600 to-indigo-800', // Purple to Indigo
-    'from-lime-500 to-green-700', // Lime to Green
+     'from-green-500 to-teal-700', // Green to Teal
     'from-pink-500 to-purple-700', // Pink to Purple
     'from-cyan-600 to-blue-700', // Cyan to Blue
-    'from-orange-400 to-red-700', // Orange to Red
+    'from-red-500 to-pink-600', // Orange to Red
     'from-blue-600 to-teal-700', // Teal
 ];
 
