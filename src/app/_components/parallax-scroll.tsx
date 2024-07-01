@@ -1,7 +1,6 @@
 'use client';
 import { cn } from '@/lib/utils';
-import { motion, useScroll, useTransform} from 'framer-motion';
-import { use, useEffect } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { DiMysql } from 'react-icons/di';
 import { FaGitAlt, FaJava, FaPython } from 'react-icons/fa';
 import { FaAws } from 'react-icons/fa6';
@@ -31,22 +30,29 @@ let gradients = [
     'from-red-500 to-pink-700',
     'from-cyan-500 to-blue-700', // Cyan to Blue
     'from-blue-500 to-purple-600', // Orange to Red //Express
-
-       'from-lime-500 to-green-700', // Lime to Green
+    'from-lime-500 to-green-700', // Lime to Green
     'from-purple-500 to-pink-800', // Purple to Pink
     'from-blue-700 to-sky-800', // Teal to Cyan
     'from-yellow-500 to-orange-700',
     'from-blue-500 to-indigo-700', // Blue to Indigo
     'from-purple-400 to-orange-600', // Yellow to Orange
     'from-purple-600 to-indigo-800', // Purple to Indigo
-     'from-green-500 to-teal-700', // Green to Teal
+    'from-green-500 to-teal-700', // Green to Teal
     'from-pink-500 to-purple-700', // Pink to Purple
     'from-cyan-600 to-blue-700', // Cyan to Blue
     'from-red-500 to-pink-600', // Orange to Red
     'from-blue-600 to-teal-700', // Teal
 ];
 
-const IconCard = ({ icon, label, color }: { icon: any; label: string, color:string }) => {
+const IconCard = ({
+    icon,
+    label,
+    color,
+}: {
+    icon: any;
+    label: string;
+    color: string;
+}) => {
     const gradientBg = `flex h-[150px] max-w-4xl flex-col items-center justify-center rounded-b-xl bg-gradient-to-r ${color} sm:h-[200px] text-white text-center`;
 
     return (
@@ -55,9 +61,7 @@ const IconCard = ({ icon, label, color }: { icon: any; label: string, color:stri
                 <div className="m-0 p-0 text-5xl text-white drop-shadow-2xl">
                     {icon}
                 </div>
-                <div className="flex pt-1 px-2 sm:px-0 sm:p-0">
-                    {label}
-                </div>
+                <div className="flex pt-1 px-2 sm:px-0 sm:p-0">{label}</div>
             </div>
         </div>
     );
@@ -143,8 +147,8 @@ export const ParallaxScroll = ({
     const firstPart = icons.slice(0, 7);
     const secondPart = icons.slice(7, 13);
     const thirdPart = icons.slice(13);
-    const gradients1 = gradients.slice(0,7);
-    const gradients2 = gradients.slice(7,13);
+    const gradients1 = gradients.slice(0, 7);
+    const gradients2 = gradients.slice(7, 13);
     const gradients3 = gradients.slice(13);
 
     return (
@@ -155,13 +159,19 @@ export const ParallaxScroll = ({
             <div className="lg:gap:10 mx-auto grid max-w-5xl grid-cols-3 items-start gap-[5px] md:gap-5">
                 <div className="lg:gap:10 grid gap-[5px] p-0 md:gap-5">
                     {firstPart.map((el, idx) => {
-                        return(<motion.div
-                            style={{ y: translateFirst }} // Apply the translateY motion value here
-                            key={'grid-1' + idx}
-                        >
-                            <IconCard icon={el.component} label={el.name} color={gradients1[idx]}/>
-                        </motion.div>)
-                })}
+                        return (
+                            <motion.div
+                                style={{ y: translateFirst }} // Apply the translateY motion value here
+                                key={'grid-1' + idx}
+                            >
+                                <IconCard
+                                    icon={el.component}
+                                    label={el.name}
+                                    color={gradients1[idx]}
+                                />
+                            </motion.div>
+                        );
+                    })}
                 </div>
                 <div className="lg:gap:10 grid gap-[5px] p-0 md:gap-5">
                     {secondPart.map((el, idx) => (
@@ -169,7 +179,11 @@ export const ParallaxScroll = ({
                             style={{ y: translateSecond }}
                             key={'grid-2' + idx}
                         >
-                            <IconCard icon={el.component} label={el.name} color={gradients2[idx]} />
+                            <IconCard
+                                icon={el.component}
+                                label={el.name}
+                                color={gradients2[idx]}
+                            />
                         </motion.div>
                     ))}
                 </div>
@@ -179,7 +193,11 @@ export const ParallaxScroll = ({
                             style={{ y: translateThird }}
                             key={'grid-3' + idx}
                         >
-                            <IconCard icon={el.component} label={el.name} color={gradients3[idx]} />
+                            <IconCard
+                                icon={el.component}
+                                label={el.name}
+                                color={gradients3[idx]}
+                            />
                         </motion.div>
                     ))}
                 </div>
