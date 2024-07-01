@@ -39,7 +39,7 @@ export default function Index() {
                 >
                     <div className="absolute left-[58%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
                         <div className="font-light tracking-tighter">
-                            <div className="bg-gradient-to-t from-teal-400/95 to-indigo-500/95 bg-clip-text text-transparent drop-shadow-2xl">
+                            <div className="bg-transparent bg-clip-text text-transparent drop-shadow-2xl">
                                 <div className="font-bold text-blue italic">
                                     <FlipWords
                                         className="opacity-60"
@@ -47,7 +47,9 @@ export default function Index() {
                                         duration={500}
                                     />
                                 </div>
+                                <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl">
                                 <div className="px-2 font-bold">I'm Chris.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
