@@ -9,6 +9,15 @@ import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { FlipWords } from './_components/filpWords';
 import { ParallaxScroll } from './_components/parallax-scroll';
 export default function Index() {
+ const greetings = [
+  "Hello,", // English
+  "Hola,", // Spanish
+  "Bonjour,", // French
+  '你好,',
+  "こんにちは,", // Japanese
+  "안녕하세요,", // Korean
+  "Xin chào,", // Vietnamese
+];
     const allPortfolioItems = getAllPortfolio();
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     return (
@@ -34,12 +43,8 @@ export default function Index() {
                                 <div className="font-bold text-blue italic">
                                     <FlipWords
                                         className="opacity-60"
-                                        words={[
-                                            'Hello,',
-                                            '你好,',
-                                            'こんにちは,',
-                                        ]}
-                                        duration={1000}
+                                        words={greetings}
+                                        duration={500}
                                     />
                                 </div>
                                 <div className="px-2 font-bold">I'm Chris.</div>
