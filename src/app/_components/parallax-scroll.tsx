@@ -1,7 +1,7 @@
 'use client';
 import { cn } from '@/lib/utils';
-import { motion, useScroll, useTransform } from 'framer-motion';
-
+import { motion, useScroll, useTransform} from 'framer-motion';
+import { use, useEffect } from 'react';
 import { DiMysql } from 'react-icons/di';
 import { FaGitAlt, FaJava, FaPython } from 'react-icons/fa';
 import { FaAws } from 'react-icons/fa6';
@@ -23,38 +23,31 @@ import {
 import { TbBrandThreejs } from 'react-icons/tb';
 
 let gradients = [
-    'from-blue-600 to-teal-700', // Teal
-    'from-orange-400 to-red-700', // Orange to Red
-    'from-cyan-600 to-blue-700', // Cyan to Blue
-    'from-pink-500 to-purple-700', // Pink to Purple
-    'from-lime-500 to-green-700', // Lime to Green
     'from-purple-600 to-indigo-800', // Purple to Indigo
-    'from-purple-400 to-orange-600', // Yellow to Orange
-    'from-blue-500 to-indigo-700', // Blue to Indigo
-    // Red to Pink ///
-    'from-yellow-500 to-orange-700',
-    'from-blue-700 to-sky-800', // Teal to Cyan
-    'from-purple-500 to-pink-800', // Purple to Pink
-    'from-green-500 to-teal-700', // Green to Teal
-    'from-blue-500 to-purple-600', // Orange to Red //Express
-    'from-cyan-500 to-blue-700', // Cyan to Blue
-
-    'from-red-500 to-pink-700',
-
-    // Yellow to Orange ///
-    'from-sky-500 to-cyan-700', // Sky to Cyan
-    'from-pink-600 to-purple-800', // Pink to Purple
-    'from-teal-500 to-green-800', // Teal to Green
     'from-cyan-600 to-blue-800', // Cyan to Blue
+    'from-teal-500 to-green-800', // Teal to Green
+    'from-pink-600 to-purple-800', // Pink to Purple
+    'from-sky-500 to-cyan-700', // Sky to Cyan
+    'from-red-500 to-pink-700',
+    'from-cyan-500 to-blue-700', // Cyan to Blue
+    'from-blue-500 to-purple-600', // Orange to Red //Express
+    'from-green-500 to-teal-700', // Green to Teal
+    'from-purple-500 to-pink-800', // Purple to Pink
+    'from-blue-700 to-sky-800', // Teal to Cyan
+    'from-yellow-500 to-orange-700',
+    'from-blue-500 to-indigo-700', // Blue to Indigo
+    'from-purple-400 to-orange-600', // Yellow to Orange
     'from-purple-600 to-indigo-800', // Purple to Indigo
-].reverse();
+    'from-lime-500 to-green-700', // Lime to Green
+    'from-pink-500 to-purple-700', // Pink to Purple
+    'from-cyan-600 to-blue-700', // Cyan to Blue
+    'from-orange-400 to-red-700', // Orange to Red
+    'from-blue-600 to-teal-700', // Teal
+];
 
-let lastUsedGradientIndex = 0;
+const IconCard = ({ icon, label, color }: { icon: any; label: string, color:string }) => {
+    const gradientBg = `flex h-[150px] max-w-4xl flex-col items-center justify-center rounded-b-xl bg-gradient-to-r ${color} sm:h-[200px] text-white text-center`;
 
-const IconCard = ({ icon, label }: { icon: any; label: string }) => {
-    const gradientBg = `flex h-[150px] max-w-4xl flex-col items-center justify-center rounded-b-xl bg-gradient-to-r ${gradients[lastUsedGradientIndex]} sm:h-[200px] text-white text-center`;
-
-    lastUsedGradientIndex = (lastUsedGradientIndex + 1) % gradients.length;
     return (
         <div className="mockup-window border border-slate-900 bg-slate-900 drop-shadow-xl">
             <div className={gradientBg}>
@@ -144,12 +137,12 @@ export const ParallaxScroll = ({
         [0.23, 0.7],
         [0, -200]
     );
-
-    const third = Math.ceil(images.length / 3);
-
     const firstPart = icons.slice(0, 7);
     const secondPart = icons.slice(7, 13);
     const thirdPart = icons.slice(13);
+    const gradients1 = gradients.slice(0,7);
+    const gradients2 = gradients.slice(7,13);
+    const gradients3 = gradients.slice(13);
 
     return (
         <div
@@ -158,14 +151,14 @@ export const ParallaxScroll = ({
         >
             <div className="lg:gap:10 mx-auto grid max-w-5xl grid-cols-3 items-start gap-[5px] md:gap-5">
                 <div className="lg:gap:10 grid gap-[5px] p-0 md:gap-5">
-                    {firstPart.map((el, idx) => (
-                        <motion.div
+                    {firstPart.map((el, idx) => {
+                        return(<motion.div
                             style={{ y: translateFirst }} // Apply the translateY motion value here
                             key={'grid-1' + idx}
                         >
-                            <IconCard icon={el.component} label={el.name} />
-                        </motion.div>
-                    ))}
+                            <IconCard icon={el.component} label={el.name} color={gradients1[idx]}/>
+                        </motion.div>)
+                })}
                 </div>
                 <div className="lg:gap:10 grid gap-[5px] p-0 md:gap-5">
                     {secondPart.map((el, idx) => (
@@ -173,7 +166,7 @@ export const ParallaxScroll = ({
                             style={{ y: translateSecond }}
                             key={'grid-2' + idx}
                         >
-                            <IconCard icon={el.component} label={el.name} />
+                            <IconCard icon={el.component} label={el.name} color={gradients2[idx]} />
                         </motion.div>
                     ))}
                 </div>
@@ -183,7 +176,7 @@ export const ParallaxScroll = ({
                             style={{ y: translateThird }}
                             key={'grid-3' + idx}
                         >
-                            <IconCard icon={el.component} label={el.name} />
+                            <IconCard icon={el.component} label={el.name} color={gradients3[idx]} />
                         </motion.div>
                     ))}
                 </div>
