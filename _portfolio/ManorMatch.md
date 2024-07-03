@@ -15,6 +15,9 @@ techStack:
     - 'Tailwind'
     - 'MongoDB'
     - 'Figma'
+    - 'AWS EC2'
+    - 'Mongoose'
+
 ---
 
 ## Summary
@@ -23,4 +26,5 @@ ManorMatch is a full-stack application designed to seamlessly connect discerning
 
 - Github:
   - [Link](https://github.com/ManorMatch/ManorMatch)
+
 
