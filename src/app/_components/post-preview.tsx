@@ -27,7 +27,7 @@ export function PostPreview({
     techStack,
 }: Props) {
     return (
-        <div className="group relative mt-4 rounded-2xl bg-gradient-to-bl from-black to-slate-900 border-2 border-transparent hover:border-slate-800 transition duration-150">
+        <div className="group relative mt-4 rounded-2xl bg-gradient-to-bl from-black to-slate-900 border-2 border-transparent hover:border-slate-800 transition duration-300">
             <div className="mb-1 -mt-11">
                 {
                     <CoverImageCarausel

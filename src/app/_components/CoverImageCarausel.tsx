@@ -38,7 +38,7 @@ const CoverImageCarausel = ({ title, src, slug }: Props) => {
             {images.map((src, i) => {
                 return (
                     <SwiperSlide key={i}>
-                        <div className="mb-6 flex flex-col rounded-t-xl h-full w-full items-center justify-center overflow-clip border border-slate-900 bg-slate-900">
+                        <div className="mb-6 flex flex-col rounded-xl h-full w-full items-center justify-center overflow-clip border border-none bg-slate-900">
                             <div className="flex w-full items-start justify-start gap-2 p-4 pl-5">
                                 <div className="w-3 h-3 bg-gray-500 group-hover:bg-red-500 transition duration-300 rounded-full"></div>
                                 <div className="w-3 h-3 bg-gray-500 group-hover:bg-yellow-500 transition duration-300 rounded-full"></div>
