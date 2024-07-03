@@ -34,7 +34,6 @@ export function PostPreview({
                         slug={slug}
                         title={title}
                         src={coverImage}
-
                     />
                 }
             </div>
