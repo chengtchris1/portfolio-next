@@ -57,10 +57,10 @@ const IconCard = ({
 
     return (
         <div className="group rounded-xl  bg-slate-900 drop-shadow-xl border-black border-2 hover:border-slate-800 transition duration-300">
-            <div className="flex items-start justify-start gap-2 p-4 pl-5">
-                <div className="w-3 h-3 bg-gray-500 group-hover:bg-red-500 transition duration-300 rounded-full"></div>
-                <div className="w-3 h-3 bg-gray-500 group-hover:bg-yellow-500 transition duration-300 rounded-full"></div>
-                <div className="w-3 h-3 bg-gray-500 group-hover:bg-green-500 rounded-full transition duration-300 "></div>
+            <div className="flex items-start justify-start gap-[0.33rem] py-[.66rem] sm:gap-2 p-2 pl-[.85rem] sm:p-4 sm:pl-5">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-500 group-hover:bg-red-500 transition duration-300 rounded-full"></div>
+                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-500 group-hover:bg-yellow-500 transition duration-300 rounded-full"></div>
+                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-500 group-hover:bg-green-500 rounded-full transition duration-300 "></div>
             </div>
             <div className={gradientBg}>
                 <div className="m-0 p-0 text-5xl text-white drop-shadow-2xl">
