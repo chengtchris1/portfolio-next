@@ -4,6 +4,27 @@
 a:hover {
     text-decoration: underline; /* Underlines links on hover */
 }
+li {
+    padding: 0px
+}
+ul {
+  padding: 0;
+  padding-left: 20px;
+  list-style-type: circle;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+
+}
+
+/* Second level of unordered list */
+ul ul {
+  padding-left: 40px;
+}
+
+/* Third level of unordered list */
+ul ul ul {
+  padding-left: 60px;
+}
 @layer base {
     :root {
         --background: 0 0% 100%;

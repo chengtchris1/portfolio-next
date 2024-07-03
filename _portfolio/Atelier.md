@@ -25,6 +25,6 @@ techStack:
 
 Atelier is an extensive e-commerce platform, consisting of a distinct front-end and back-end component.
 
--   Github:
--   [Front-end](https://github.com/Team-Atelier/Project-Atelier)
--   [Back-end](https://github.com/Atelier-Back-End/Reviews)
+- Github:
+  - [Front-end](https://github.com/Team-Atelier/Project-Atelier)
+  - [Back-end](https://github.com/Atelier-Back-End/Reviews)
