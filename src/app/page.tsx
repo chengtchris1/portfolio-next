@@ -73,7 +73,7 @@ export default function Index() {
             <div className="flex flex-col text-white">
                 <Container>
                     <h1 className="text-6xl font-bold">Some tech I used</h1>
-                    <div className="relative flex h-[1340px] flex-row items-start justify-start overflow-hidden sm:h-[1700px]">
+                    <div className="relative flex h-[1220px] flex-row items-start justify-start overflow-hidden sm:h-[1700px]">
                         <ParallaxScroll images={images} />
                         <div
                             style={{ pointerEvents: 'none' }}
