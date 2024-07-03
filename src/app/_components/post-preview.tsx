@@ -46,11 +46,11 @@ export function PostPreview({
             <div className="m-4 text-lg">
                 <TechStack techStack={techStack} />
             </div>
-            <p className="m-4 text-lg leading-relaxed mb-16 flex items-start justify-center h-full">{excerpt}</p>
+            <p className="m-4 pb-4 text-lg leading-relaxed mb-16 flex items-start justify-center h-full">{excerpt}</p>
             <div className="absolute bottom-0 right-0 m-4">
                 <Link href={`/portfolio/${slug}`}>
                     <button className="rounded-2xl border p-2 text-sm transition duration-300 hover:bg-white hover:text-black">
-                        <div className="flex items-center space-x-1">
+                        <div className="flex items-center space-x-1 p-0.5">
                             <span>More details</span>
                             <FaChevronCircleRight />
                         </div>
