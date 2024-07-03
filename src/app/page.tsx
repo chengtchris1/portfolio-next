@@ -71,8 +71,8 @@ export default function Index() {
                 </Container>
             </div>
             <div className="flex flex-col text-white">
-                <Container>
-                    <h1 className="text-6xl font-bold">Some tech I used</h1>
+                <Container className='px-0'>
+                    <h1 className="text-6xl font-bold px-4 sm:px-0">Some tech I used</h1>
                     <div className="relative flex h-[1220px] flex-row items-start justify-start overflow-hidden sm:h-[1700px]">
                         <ParallaxScroll images={images} />
                         <div
