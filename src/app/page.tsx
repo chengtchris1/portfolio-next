@@ -48,7 +48,9 @@ export default function Index() {
                                     />
                                 </div>
                                 <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl">
-                                <div className="px-2 font-bold">I'm Chris.</div>
+                                    <div className="px-2 font-bold">
+                                        I'm Chris.
+                                    </div>
                                 </div>
                             </div>
                         </div>
