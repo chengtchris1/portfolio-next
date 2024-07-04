@@ -73,7 +73,7 @@ export default function Index() {
             <Container>
             <div className="m-0 w-full p-0">
                     <h1 className="w-full p-5 pb-0 pl-0 pt-0 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8">
-                        Some tech I used
+                        Some Tech I Used
                     </h1>
             </div>
             </Container>
