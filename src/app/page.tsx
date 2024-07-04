@@ -66,22 +66,29 @@ export default function Index() {
             </div>
 
             <div className="w-full bg-white text-black">
-                <Container>
+                <Container className='mb-0 pb-0'>
                     <Intro />
                 </Container>
             </div>
-            <div className="flex flex-col text-white">
-                <Container className='px-0'>
-                    <h1 className="text-6xl font-bold px-4 sm:px-0">Some tech I used</h1>
-                    <div className="relative flex h-[1220px] flex-row items-start justify-start overflow-hidden sm:h-[1700px]">
+            <Container>
+            <div className="m-0 w-full p-0">
+                    <h1 className="w-full p-5 pb-0 pl-0 pt-0 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8">
+                        Some tech I used
+                    </h1>
+            </div>
+            </Container>
+            <div className="flex flex-col text-white w-full overflow-hidden items-center justify-center">
+                <Container className='pt-0 mt-0 pl-0 ml-[-0.7rem] sm:ml-0 w-[110%] sm:w-ful sm:m-0 sm:p-0 flex flex-col justify-center items-center'>
+
+                    <div className="relative flex h-[1220px] flex-row justify-center sm:h-[1700px] w-full">
                         <ParallaxScroll images={images} />
                         <div
                             style={{ pointerEvents: 'none' }}
-                            className="absolute inset-0 h-1/6 bg-gradient-to-b from-black"
+                            className="z-20 absolute inset-0 h-1/6 bg-gradient-to-b from-black"
                         ></div>
                         <div
                             style={{ pointerEvents: 'none' }}
-                            className="absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-black"
+                            className="z-20 absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-black"
                         ></div>
                     </div>
                 </Container>
