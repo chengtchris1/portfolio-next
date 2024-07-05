@@ -55,37 +55,40 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full bg-blue-950 flex items-center justify-center bg-clip-content'>
-                    <div className="flex items-center justify-center w-5/6 mt-0 overflow-hidden  relative">
-  <div className="absolute inset-0 bg-gradient-to-t from-blue-950 from-25% to-transparent"></div>
-  <Image
-    src={bg}
-    quality={100}
-    priority={true}
-    style={{ objectFit: "cover" }}
-    className="h-screen"
-  />
-</div>
-
-</div>
+                    <div className="w-full bg-violet-950 flex items-center justify-center bg-clip-content">
+                        <div className="flex items-center justify-center w-5/6 mt-28 overflow-hidden  relative rounded-t-xl flex-col">
+                            <div className="absolute inset-0 bg-gradient-to-t from-violet-950 from-25% to-transparent"></div>
+                            <div className="bg-slate-950 flex items-start justify-start gap-[0.33rem] py-[.66rem] sm:gap-2 p-2 pl-[.85rem] sm:p-4 sm:pl-5 w-full">
+                                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-500 group-hover:bg-red-500 transition duration-300 rounded-full"></div>
+                                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-500 group-hover:bg-yellow-500 transition duration-300 rounded-full"></div>
+                                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-500 group-hover:bg-green-500 rounded-full transition duration-300 "></div>
+                            </div>
+                            <Image
+                                src={bg}
+                                quality={100}
+                                priority={true}
+                                style={{ objectFit: 'cover' }}
+                                className="h-screen"
+                            />
+                        </div>
+                    </div>
                 </BackgroundGradientAnimation>
             </div>
 
             <div className="w-full bg-white text-black">
-                <Container className='mb-0 pb-0'>
+                <Container className="mb-0 pb-0">
                     <Intro />
                 </Container>
             </div>
             <Container>
-            <div className="m-0 w-full p-0">
+                <div className="m-0 w-full p-0">
                     <h1 className="w-full p-5 pb-0 pl-0 pt-0 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8">
                         Some Tech I Used
                     </h1>
-            </div>
+                </div>
             </Container>
             <div className="flex flex-col text-white w-full overflow-hidden items-center justify-center">
-                <Container className='pt-0 mt-0 pl-0 ml-[-0.7rem] sm:ml-0 w-[110%] sm:w-ful sm:m-0 sm:p-0 flex flex-col justify-center items-center'>
-
+                <Container className="pt-0 mt-0 pl-0 ml-[-0.7rem] sm:ml-0 w-[110%] sm:w-ful sm:m-0 sm:p-0 flex flex-col justify-center items-center">
                     <div className="relative flex h-[1220px] flex-row justify-center sm:h-[1700px] w-full">
                         <ParallaxScroll images={images} />
                         <div
