@@ -22,7 +22,7 @@ export default function Index() {
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     return (
         <main>
-            <div className="bg-dark-gradient m-0 mb-0 flex h-fit flex-col-reverse items-center justify-center bg-black bg-cover bg-center bg-no-repeat object-cover sm:h-screen sm:flex-row">
+            <div className="bg-dark-gradient m-0 mb-0 flex h-fit flex-col-reverse items-center justify-center bg-sky-600 bg-cover bg-center bg-no-repeat object-cover sm:h-screen sm:flex-row">
                 {' '}
                 <BackgroundGradientAnimation
                     gradientBackgroundStart="rgb(0,0,0)"
@@ -37,7 +37,7 @@ export default function Index() {
                     blendingValue="color-dodge"
                     size="90%"
                 >
-                    <div className="absolute left-[58%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
+                    <div className="absolute left-[62%] top-[60%] z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
                         <div className="font-light tracking-tighter">
                             <div className="bg-transparent bg-clip-text text-transparent drop-shadow-2xl">
                                 <div className="font-bold text-blue italic">
@@ -55,13 +55,19 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                    <Image
-                        className="opacity-60"
-                        src={bg}
-                        quality={100}
-                        priority={true}
-                        fill
-                    />
+                    <div className='w-full bg-blue-950 flex items-center justify-center bg-clip-content'>
+                    <div className="flex items-center justify-center w-5/6 mt-0 overflow-hidden  relative">
+  <div className="absolute inset-0 bg-gradient-to-t from-blue-950 from-25% to-transparent"></div>
+  <Image
+    src={bg}
+    quality={100}
+    priority={true}
+    style={{ objectFit: "cover" }}
+    className="h-screen"
+  />
+</div>
+
+</div>
                 </BackgroundGradientAnimation>
             </div>
 
