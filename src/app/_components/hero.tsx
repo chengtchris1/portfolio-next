@@ -30,7 +30,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="absolute w-full bg-violet-950 flex items-center justify-center bg-clip-content">
+            <div className="absolute w-full bg-gradient-to-b from-violet-950 to-black  flex items-center justify-center bg-clip-content">
                 <div className="flex items-center justify-center w-5/6 mt-28 overflow-hidden  relative rounded-t-xl flex-col">
                     <div className="bg-slate-950 flex items-start justify-start gap-[0.33rem] py-[.66rem] sm:gap-2 p-4 pl-5 w-full">
                         <div className="w-3 h-3  bg-red-500 transition duration-300 rounded-full"></div>
@@ -49,7 +49,7 @@ export default function Hero() {
                             //pointerColor="255, 255, 255"
                             interactive={true}
                             blendingValue="screen"
-                            size="90%"
+                            size="70%"
                         >
                           <div className='flex'>
                             <Image
@@ -59,7 +59,7 @@ export default function Hero() {
                                 className="absolute h-full w-full object-fill"
                                 alt={"hero bg"}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-violet-950 from-25% to-transparent"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent"></div>
                             </div>
                         </BackgroundGradientAnimation>
                     </div>
