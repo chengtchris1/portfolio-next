@@ -31,14 +31,14 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="absolute w-full bg-gradient-to-b from-blue-600 to-black  flex items-center justify-center bg-clip-content">
+            <div className="absolute w-full bg-transparent from-blue-600 to-black  flex items-center justify-center bg-clip-content">
                 <div className="flex items-center justify-center w-5/6 mt-28 overflow-hidden  relative rounded-xl flex-col drop-shadow-2xl">
-                    <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full">
+                    <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full mt-36 sm:mt-0 rounded-t-2xl">
                         <div className="w-3 h-3  bg-red-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-yellow-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-green-500 rounded-full transition duration-300 "></div>
                     </div>
-                    <div className="h-[82vh]">
+                    <div className="h-[50vh] sm:h-[82vh]">
                         <BackgroundGradientAnimation
                             gradientBackgroundStart="rgb(0,0,0)"
                             gradientBackgroundEnd="rgb(0,0,0)"
@@ -80,6 +80,14 @@ export default function Hero() {
                         </BackgroundGradientAnimation>
                     </div>
                 </div>
+                <Image
+                                src={bg}
+                                quality={100}
+                                priority={true}
+                                className="-z-10"
+                                alt={'hero bg'}
+                                fill
+                            />
             </div>
         </div>
     );
