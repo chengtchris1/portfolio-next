@@ -1,14 +1,10 @@
 import Container from '@/app/_components/container';
 import { Intro } from '@/app/_components/intro';
 import { MoreStories } from '@/app/_components/more-stories';
-import bg from '@/assets/hero-bg.png';
 import { getAllPortfolio } from '@/lib/api';
 import { Metadata } from 'next';
-import Image from 'next/image';
-import { BackgroundGradientAnimation } from './_components/animatedGradient';
-import { FlipWords } from './_components/filpWords';
-import { ParallaxScroll } from './_components/parallax-scroll';
 import Hero from './_components/hero';
+import { ParallaxScroll } from './_components/parallax-scroll';
 export default function Index() {
     const greetings = [
         'Hello,', // English
@@ -23,7 +19,7 @@ export default function Index() {
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     return (
         <main>
-            <div className="bg-dark-gradient m-0 flex h-full flex-col-reverse items-center justify-center bg-cover bg-center bg-no-repeat object-cover sm:flex-row overflow-hidden">
+            <div className="bg-dark-gradient m-0 flex h-full flex-col-reverse items-center justify-center bg-cover bg-center bg-no-repeat object-cover sm:flex-row overflow-hidden mb-10">
                 <Hero />
             </div>
 

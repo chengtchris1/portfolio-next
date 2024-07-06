@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { FlipWords } from './filpWords';
-import { BackgroundGradientAnimation } from './animatedGradient';
 import bg from '@/assets/hero-bg.png';
+import Image from 'next/image';
+import { BackgroundGradientAnimation } from './animatedGradient';
+import { FlipWords } from './filpWords';
 const greetings = [
     'Hello,', // English
     'Hola,', // Spanish
@@ -17,7 +17,7 @@ export default function Hero() {
             <div className="absolute left-[56%] top-[60%] z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[60%] lg:left-[60%] md:text-8xl lg:text-9xl w-[90%] max-w-[80%] px-0 mx-0">
                 <div className="font-light tracking-tighter">
                     <div className="bg-transparent bg-clip-text text-transparent drop-shadow-2xl">
-                        <div className="font-bold text-blue italic ">
+                        {/*<div className="font-bold text-blue italic ">
                             <FlipWords
                                 className="opacity-60 "
                                 words={greetings}
@@ -27,6 +27,7 @@ export default function Hero() {
                         <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl">
                             <div className="px-2 font-bold">I'm Chris.</div>
                         </div>
+*/}
                     </div>
                 </div>
             </div>
@@ -51,15 +52,28 @@ export default function Hero() {
                             blendingValue="screen"
                             size="70%"
                         >
-                          <div className='flex'>
                             <Image
                                 src={bg}
                                 quality={100}
                                 priority={true}
-                                className="absolute h-full w-full object-fill"
-                                alt={"hero bg"}
+                                className="absolute h-full w-full object-fill mix-blend-screen opacity-90"
+                                alt={'hero bg'}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent"></div>
+                            <div className="flex text-white items-center justify-center h-full ">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent text-white flex flex-col justify-center items-center  first-letter: bg-transparent z-30 text-5xl sm:text-7xl lg:text-9xl mix-blend-screen">
+                                    <div className="font-bold m-0 ml-0 sm:ml-32 bg-transparent -mt-96 sm:-mt-96 p-2 w-9/12">
+                                        <FlipWords
+                                            className="opacity-60 "
+                                            words={greetings}
+                                            duration={500}
+                                        />
+                                        <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl">
+                                            <div className="px-2 font-bold">
+                                                I'm Chris.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </BackgroundGradientAnimation>
                     </div>
