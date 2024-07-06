@@ -50,16 +50,16 @@ export default function Hero() {
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-black from-0% to-transparent  text-white flex flex-col justify-center items-center z-30 text-6xl sm:text-7xl lg:text-9xl w-full mix-blend-screen bg-red-500">
 
-                                      <div className='flex flex-col items-start justify-start w-5/6 tracking-tighter px:4 sm:px-24 font-bold'>
+                                      <div className='flex flex-col items-start justify-start w-5/6 tracking-tighter px:4 sm:px-24 font-bold mix-blend-screen'>
                                         <FlipWords
-                                            className="opacity-60 tracking-[-0.07em] mix-blend-screen"
+                                            className="opacity-60 tracking-[-0.07em] "
                                             words={greetings}
                                             duration={500}
                                         />
                                         <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl mix-blend-screen">
-                                            <div className="px-2 font-bold">
+                                            <span className="px-2">
                                                 I'm Chris.
-                                            </div>
+                                            </span>
                                         </div>
 
                                     </div>
