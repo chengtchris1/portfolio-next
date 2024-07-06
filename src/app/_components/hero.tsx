@@ -36,15 +36,16 @@ export default function Hero() {
                             size="70%"
                             containerClassName='h-[50vh] sm:[75vh] w-screen'
                         >
-                            <div className='max-h-1/4'>
+                            <div className='max-h-1/4 object-bottom'>
                             <Image
                                 src={bg}
                                 quality={100}
                                 priority={true}
-                                className="absolute object-fill mix-blend-screen opacity-100"
+                                className="absolute object-fill mix-blend-screen opacity-100 object-bottom"
                                 alt={'hero bg'}
                             />
                             </div>
+                             <div className='absolute w-full h-full bg-gradient-to-b from-transparent to-black '></div>
                             <div className='absolute w-full h-full bg-gradient-to-b from-transparent to-black mix-blend-screen'></div>
                             <div className="flex text-white items-center justify-center h-full">
 
