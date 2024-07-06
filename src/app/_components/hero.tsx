@@ -13,15 +13,15 @@ const greetings = [
 ];
 export default function Hero() {
     return (
-        <div className="flex items-start justify-center h-[95vh] overflow-hidden mb-20">
-            <div className="absolute w-full bg-transparent from-blue-600 to-black  flex items-center justify-center bg-clip-content">
-                <div className="flex items-center justify-center w-5/6 h-5/6 mt-20 overflow-hidden  relative rounded-xl flex-col drop-shadow-2xl">
+        <div className="flex items justify-center h-[95vh] overflow-hidden">
+            <div className="absolute w-full h-full bg-transparent from-blue-600 to-black flex items-center justify-center bg-clip-content">
+                <div className="flex items-center justify-center w-5/6 h-5/6 overflow-hidden relative rounded-xl flex-col drop-shadow-2xl">
                     <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full mt-36 sm:mt-0 rounded-t-2xl">
                         <div className="w-3 h-3  bg-red-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-yellow-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-green-500 rounded-full transition duration-300 "></div>
                     </div>
-                    <div className="h-[50vh] sm:h-[82vh]">
+                    <div className="">
                         <BackgroundGradientAnimation
                             gradientBackgroundStart="rgb(0,0,0)"
                             gradientBackgroundEnd="rgb(0,0,0)"
@@ -32,22 +32,25 @@ export default function Hero() {
                             fourthColor="127,0,255"
                             //pointerColor="255, 255, 255"
                             interactive={true}
-                            blendingValue="screen"
+                            blendingValue="screen "
                             size="70%"
+                            containerClassName='h-[50vh] sm:[75vh] w-screen'
                         >
+                            <div className='max-h-1/4'>
                             <Image
                                 src={bg}
                                 quality={100}
                                 priority={true}
-                                className="absolute h-full w-full object-fill mix-blend-screen opacity-90"
+                                className="absolute object-fill mix-blend-screen opacity-100"
                                 alt={'hero bg'}
                             />
+                            </div>
                             <div className="flex text-white items-center justify-center h-full">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent text-white flex flex-col justify-center items-center  first-letter:  z-30 text-5xl sm:text-7xl lg:text-9xl mix-blend-screen w-full bg-red-700">
-                                    <div className="font-bold m-0 bg-transparent -mt-96 md:-mt-48 sm:-mt-96 px-8 sm:px-32 p-2 w-full  flex flex-col items-center justify-center">
-                                      <div className='flex flex-col items-start w-5/6 tracking-tighter'>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black from-1% to-transparent text-white flex flex-col justify-center items-center z-30 text-6xl sm:text-7xl lg:text-9xl w-full bg-red-700 mix-blend-screen">
+
+                                      <div className='flex flex-col items-start justify-start w-5/6 tracking-tighter px:4 sm:px-24 font-bold'>
                                         <FlipWords
-                                            className="opacity-60 "
+                                            className="opacity-60 tracking-[-0.1em]"
                                             words={greetings}
                                             duration={500}
                                         />
@@ -56,7 +59,7 @@ export default function Hero() {
                                                 I'm Chris.
                                             </div>
                                         </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -75,3 +78,4 @@ export default function Hero() {
         </div>
     );
 }
+
