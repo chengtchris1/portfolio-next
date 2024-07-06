@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="flex items justify-center h-[100vh] overflow-hidden">
             <div className="absolute w-full h-full bg-transparent from-blue-600 to-black flex items-center justify-center bg-clip-content">
                 <div className="flex items-center justify-center w-5/6 h-5/6 overflow-hidden relative rounded-xl flex-col drop-shadow-2xl">
-                    <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full mt-36 sm:mt-6 rounded-t-2xl">
+                    <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full mt-36 md:mt-16 rounded-t-2xl">
                         <div className="w-3 h-3  bg-red-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-yellow-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-green-500 rounded-full transition duration-300 "></div>
