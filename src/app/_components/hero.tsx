@@ -59,9 +59,10 @@ export default function Hero() {
                                 className="absolute h-full w-full object-fill mix-blend-screen opacity-90"
                                 alt={'hero bg'}
                             />
-                            <div className="flex text-white items-center justify-center h-full ">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent text-white flex flex-col justify-center items-center  first-letter: bg-transparent z-30 text-5xl sm:text-7xl lg:text-9xl mix-blend-screen">
-                                    <div className="font-bold m-0 ml-0 sm:ml-32 bg-transparent -mt-96 sm:-mt-96 p-2 w-9/12">
+                            <div className="flex text-white items-center justify-center h-full">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent text-white flex flex-col justify-center items-center  first-letter:  z-30 text-5xl sm:text-7xl lg:text-9xl mix-blend-screen w-full bg-red-700">
+                                    <div className="font-bold m-0   bg-transparent -mt-96 sm:-mt-96 px-8 sm:px-32 p-2 w-full bg-green-500 flex flex-col items-center justify-center">
+                                      <div className='flex flex-col items-start w-5/6'>
                                         <FlipWords
                                             className="opacity-60 "
                                             words={greetings}
@@ -71,6 +72,7 @@ export default function Hero() {
                                             <div className="px-2 font-bold">
                                                 I'm Chris.
                                             </div>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
