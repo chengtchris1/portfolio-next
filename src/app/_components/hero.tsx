@@ -45,12 +45,14 @@ export default function Hero() {
                                 alt={'hero bg'}
                             />
                             </div>
+                            <div className='absolute w-full h-full bg-gradient-to-b from-transparent to-black mix-blend-screen'></div>
                             <div className="flex text-white items-center justify-center h-full">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black from-1% to-transparent text-white flex flex-col justify-center items-center z-30 text-6xl sm:text-7xl lg:text-9xl w-full bg-red-700 mix-blend-screen">
+
+                                <div className="absolute inset-0 bg-gradient-to-t from-black from-0% to-transparent  text-white flex flex-col justify-center items-center z-30 text-6xl sm:text-7xl lg:text-9xl w-full mix-blend-screen bg-red-500">
 
                                       <div className='flex flex-col items-start justify-start w-5/6 tracking-tighter px:4 sm:px-24 font-bold'>
                                         <FlipWords
-                                            className="opacity-60 tracking-[-0.1em]"
+                                            className="opacity-60 tracking-[-0.07em]"
                                             words={greetings}
                                             duration={500}
                                         />
