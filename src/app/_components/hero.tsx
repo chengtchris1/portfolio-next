@@ -13,13 +13,13 @@ const greetings = [
 ];
 export default function Hero() {
     return (
-        <div className="flex items-start justify-center h-screen">
-            <div className="absolute left-[62%] top-[60%] z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
+        <div className="flex items-start justify-center h-screen overflow-hidden">
+            <div className="absolute left-[56%] top-[60%] z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[60%] lg:left-[60%] md:text-8xl lg:text-9xl w-[90%] max-w-[80%] px-0 mx-0">
                 <div className="font-light tracking-tighter">
                     <div className="bg-transparent bg-clip-text text-transparent drop-shadow-2xl">
-                        <div className="font-bold text-blue italic">
+                        <div className="font-bold text-blue italic ">
                             <FlipWords
-                                className="opacity-60"
+                                className="opacity-60 "
                                 words={greetings}
                                 duration={500}
                             />
@@ -30,8 +30,8 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="absolute w-full bg-gradient-to-b from-indigo-700 to-black  flex items-center justify-center bg-clip-content">
-                <div className="flex items-center justify-center w-5/6 mt-28 overflow-hidden  relative rounded-t-xl flex-col drop-shadow-lg">
+            <div className="absolute w-full bg-gradient-to-b from-blue-600 to-black  flex items-center justify-center bg-clip-content">
+                <div className="flex items-center justify-center w-5/6 mt-28 overflow-hidden  relative rounded-t-xl flex-col drop-shadow-2xl">
                     <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full">
                         <div className="w-3 h-3  bg-red-500 transition duration-300 rounded-full"></div>
                         <div className="w-3 h-3   bg-yellow-500 transition duration-300 rounded-full"></div>

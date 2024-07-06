@@ -23,7 +23,7 @@ export default function Index() {
     const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     return (
         <main>
-            <div className="bg-dark-gradient m-0 flex h-full flex-col-reverse items-center justify-center bg-cover bg-center bg-no-repeat object-cover sm:flex-row">
+            <div className="bg-dark-gradient m-0 flex h-full flex-col-reverse items-center justify-center bg-cover bg-center bg-no-repeat object-cover sm:flex-row overflow-hidden">
                 <Hero />
             </div>
 
