@@ -13,7 +13,7 @@ const greetings = [
 ];
 export default function Hero() {
     return (
-        <div className="flex items justify-center h-[95vh] overflow-hidden">
+        <div className="flex items justify-center h-[100vh] overflow-hidden">
             <div className="absolute w-full h-full bg-transparent from-blue-600 to-black flex items-center justify-center bg-clip-content">
                 <div className="flex items-center justify-center w-5/6 h-5/6 overflow-hidden relative rounded-xl flex-col drop-shadow-2xl">
                     <div className="bg-slate-950 flex items-start justify-start py-[1rem] gap-2 p-4 pl-5 w-full mt-36 sm:mt-0 rounded-t-2xl">
