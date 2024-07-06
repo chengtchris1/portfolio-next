@@ -62,7 +62,7 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <div className="fixed z-[1000] grid h-16 w-full items-center justify-items-center bg-black">
+                    <div className="fixed z-[1000] grid h-12 w-full items-center justify-items-center bg-black">
                         <Container>
                             <Link href={'/'}>
                                 <div className="text-2xl ml-0 w-full font-bold">
