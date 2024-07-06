@@ -61,7 +61,7 @@ export default function Hero() {
                             />
                             <div className="flex text-white items-center justify-center h-full">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black from-25% to-transparent text-white flex flex-col justify-center items-center  first-letter:  z-30 text-5xl sm:text-7xl lg:text-9xl mix-blend-screen w-full bg-red-700">
-                                    <div className="font-bold m-0   bg-transparent -mt-96 sm:-mt-96 px-8 sm:px-32 p-2 w-full  flex flex-col items-center justify-center">
+                                    <div className="font-bold m-0 bg-transparent -mt-96 md:-mt-48 sm:-mt-96 px-8 sm:px-32 p-2 w-full  flex flex-col items-center justify-center">
                                       <div className='flex flex-col items-start w-5/6 tracking-tighter'>
                                         <FlipWords
                                             className="opacity-60 "
