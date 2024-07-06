@@ -52,11 +52,11 @@ export default function Hero() {
 
                                       <div className='flex flex-col items-start justify-start w-5/6 tracking-tighter px:4 sm:px-24 font-bold'>
                                         <FlipWords
-                                            className="opacity-60 tracking-[-0.07em]"
+                                            className="opacity-60 tracking-[-0.07em] mix-blend-screen"
                                             words={greetings}
                                             duration={500}
                                         />
-                                        <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl">
+                                        <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl mix-blend-screen">
                                             <div className="px-2 font-bold">
                                                 I'm Chris.
                                             </div>
