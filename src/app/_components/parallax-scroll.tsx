@@ -66,7 +66,9 @@ const IconCard = ({
                 <div className="m-0 p-0 text-5xl text-white drop-shadow-2xl">
                     {icon}
                 </div>
-                <div className="flex mt-2 px-[1.5rem] sm:px-0 sm:p-0 text-sm/[1.05rem]">{label}</div>
+                <div className="flex mt-2 px-[1.5rem] sm:px-0 sm:p-0 text-sm/[1.05rem]">
+                    {label}
+                </div>
             </div>
         </div>
     );
