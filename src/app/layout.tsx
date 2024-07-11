@@ -1,9 +1,6 @@
 import Footer from '@/app/_components/footer';
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
-import { FaLinkedin } from 'react-icons/fa';
-import { LuGithub } from 'react-icons/lu';
-import Container from './_components/container';
+import FooterNavbar from './_components/footerNavbar';
 import HeaderNavbar from './_components/headerNavbar';
 import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
@@ -65,22 +62,7 @@ export default function RootLayout({
                 <div className="min-h-screen">
                     <HeaderNavbar />
                     {children}
-                    <div className="fixed bottom-0 z-[1000] flex h-10 w-screen flex-row items-center justify-end bg-black">
-                        <Container>
-                            <div className="flex flex-row items-center justify-end">
-                                <Link
-                                    href={
-                                        'https://www.linkedin.com/in/chengtchris/'
-                                    }
-                                >
-                                    <FaLinkedin className="mx-2" />
-                                </Link>
-                                <Link href={'https://github.com/chengtchris1'}>
-                                    <LuGithub className="mx-2" />
-                                </Link>
-                            </div>
-                        </Container>
-                    </div>
+                    <FooterNavbar />
                 </div>
                 <Footer />
             </body>

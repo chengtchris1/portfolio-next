@@ -1,5 +1,4 @@
 import Container from '@/app/_components/container';
-import Header from '@/app/_components/header';
 import { PostBody } from '@/app/_components/post-body';
 import { PostHeader } from '@/app/_components/post-header';
 import { getAllPortfolio, getPortfolioBySlug } from '@/lib/api';
@@ -19,8 +18,8 @@ export default async function Post({ params }: Params) {
     return (
         <main className="pt-14">
             <Container>
-                <Header text={'Portfolio.'} />
-                <article className="mb-32">
+                {/*<Header text={'Portfolio.'} />*/}
+                <article className="mt-6 mb-32">
                     <PostHeader
                         title={post.title}
                         coverImage={post.coverImage}
