@@ -16,8 +16,7 @@ export function Intro() {
                 My journey in coding began in elementary school where I created
                 VBS scripts to do various tasks with my computer (such as
                 opening the CD drive)—igniting a passion that has stayed with me
-                throughout my career. I realized my heart is in software
-                engineering. I noticed the tasks I enjoyed the most involved
+                throughout my career. I noticed the tasks I enjoyed the most involved
                 tinkering and playing with cool applications with little
                 oversight.
                 <br />
