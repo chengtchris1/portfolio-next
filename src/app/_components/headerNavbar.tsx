@@ -9,7 +9,7 @@ function HeaderNavbar(ref) {
     const isHome = path === '/';
     const backgroundColor = useTransform(
         scrollYProgress,
-        [0, 0.15],
+        [0, 0.12],
         ['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']
     );
     return (
