@@ -2,7 +2,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { forwardRef } from 'react';
 function HeaderNavbar(ref) {
     const { scrollYProgress } = useScroll();
     const path = usePathname();

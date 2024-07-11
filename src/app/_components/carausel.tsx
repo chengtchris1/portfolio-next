@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -35,49 +36,98 @@ export default function Carausel() {
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-green-400 to-blue-600 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-red-600 to-orange-400 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-sky-700 to-fuchsia-600 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-blue-600 to-green-400 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-fuchsia-600 to-sky-700 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-orange-400 to-red-600 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="flex h-full w-full items-center justify-center">
                         <div className="mb-12 h-52 w-52 overflow-clip rounded-2xl border-x-4 border-y-4 border-b-8 border-black bg-opacity-50 bg-gradient-to-br from-blue-600 to-green-400 drop-shadow-md">
-                            <img className="p-0" src={portraitLoc} />
+                            <Image
+                                priority
+                                alt="Author portrait"
+                                height={208}
+                                width={208}
+                                className="p-0"
+                                src={portraitLoc}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>
