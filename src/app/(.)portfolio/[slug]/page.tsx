@@ -19,9 +19,8 @@ export default async function Post({ params }: Params) {
     return (
         <main className="pt-16">
             <Container>
-                <BackButton />
-                <Header text={'Portfolio.'} />
-                <article className="mb-32">
+                <BackButton className='mt-6'/>
+                <article className="mt-4 mb-32">
                     <PostHeader
                         title={post.title}
                         coverImage={post.coverImage}
