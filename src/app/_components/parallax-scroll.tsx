@@ -53,7 +53,7 @@ const IconCard = ({
     label: string;
     color: string;
 }) => {
-    const gradientBg = `flex h-[150px] max-w-4xl flex-col items-center justify-center rounded-b-xl bg-gradient-to-r ${color} sm:h-[200px] text-white text-center`;
+    const gradientBg = `flex h-[150px] max-w-4xl flex-col items-center justify-center rounded-b-xl bg-gradient-to-r ${color} sm:h-[200px] text-white text-center drop-shadow-xl border-transparent hover:border-slate-800 transition duration-300`;
 
     return (
         <div className="group rounded-xl  bg-slate-900 drop-shadow-xl border-black border-2 hover:border-slate-800 transition duration-300">
@@ -66,7 +66,9 @@ const IconCard = ({
                 <div className="m-0 p-0 text-5xl text-white drop-shadow-2xl">
                     {icon}
                 </div>
-                <div className="flex mt-2 px-[1.5rem] sm:px-0 sm:p-0 text-sm/[1.05rem]">{label}</div>
+                <div className="flex mt-2 px-[1.5rem] sm:px-0 sm:p-0 text-sm/[1.05rem]">
+                    {label}
+                </div>
             </div>
         </div>
     );

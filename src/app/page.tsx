@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { FlipWords } from './_components/filpWords';
 import { ParallaxScroll } from './_components/parallax-scroll';
+
 export default function Index() {
     const greetings = [
         'Hello,', // English
@@ -65,21 +66,20 @@ export default function Index() {
                 </BackgroundGradientAnimation>
             </div>
 
-            <div className="w-full bg-white text-black">
-                <Container className='mb-0 pb-0'>
+            <div id="aboutme" className="w-full bg-white text-black">
+                <Container className="mb-0 pb-0">
                     <Intro />
                 </Container>
             </div>
             <Container>
-            <div className="m-0 w-full p-0">
+                <div className="m-0 w-full p-0">
                     <h1 className="w-full p-5 pb-0 pl-0 pt-0 text-6xl font-bold leading-tight tracking-tighter md:w-auto md:min-w-96 md:pr-8">
                         Some Tech I Used
                     </h1>
-            </div>
+                </div>
             </Container>
             <div className="flex flex-col text-white w-full overflow-hidden items-center justify-center">
-                <Container className='pt-0 mt-0 pl-0 ml-[-0.7rem] sm:ml-0 w-[110%] sm:w-ful sm:m-0 sm:p-0 flex flex-col justify-center items-center'>
-
+                <Container className="pt-0 mt-0 pl-0 ml-[-0.7rem] sm:ml-0 w-[110%] sm:w-ful sm:m-0 sm:p-0 flex flex-col justify-center items-center">
                     <div className="relative flex h-[1220px] flex-row justify-center sm:h-[1700px] w-full">
                         <ParallaxScroll images={images} />
                         <div
@@ -93,7 +93,7 @@ export default function Index() {
                     </div>
                 </Container>
             </div>
-            <div className="bg-black text-white">
+            <div id="portfolio" className="bg-black text-white">
                 <Container>
                     {/*<HeroPost
           title={heroPost.title}
