@@ -45,4 +45,4 @@ function HeaderNavbar(ref) {
         </div>
     );
 }
-export default forwardRef(HeaderNavbar);
+export default HeaderNavbar;
