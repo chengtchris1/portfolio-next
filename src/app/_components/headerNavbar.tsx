@@ -29,20 +29,16 @@ function HeaderNavbar(ref) {
                     </Link>
                 </div>
                 <div className="flex items-center justify-end sm:justify-center font-mono w-full col-span-2 sm:col-span-1 ">
-                    {isHome && (
-                        <>
-                            <div className="hidden sm:flex justify-center m;-3 sm:ml-5">
-                                <Link href="#aboutme" scroll>
-                                    //About
-                                </Link>
-                            </div>
-                            <div className="flex justify-center ml-3 sm:ml-5">
-                                <Link href="#portfolio" scroll>
-                                    //Portfolio
-                                </Link>
-                            </div>
-                        </>
-                    )}
+                    <div className="hidden sm:flex justify-center m;-3 sm:ml-5">
+                        <Link href="/#aboutme" scroll>
+                            //About
+                        </Link>
+                    </div>
+                    <div className="flex justify-center ml-3 sm:ml-5">
+                        <Link href="/#portfolio" scroll>
+                            //Portfolio
+                        </Link>
+                    </div>
                 </div>
                 <div className="col-span-1 w-full hidden md:flex"></div>
             </motion.div>
