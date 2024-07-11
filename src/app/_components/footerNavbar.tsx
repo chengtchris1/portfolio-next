@@ -11,7 +11,7 @@ export default function FooterNavbar() {
     const isHome = path === '/';
     const backgroundColor = useTransform(
         scrollYProgress,
-        [0, 0.01],
+        [0, 0.02],
         ['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']
     );
     return (
