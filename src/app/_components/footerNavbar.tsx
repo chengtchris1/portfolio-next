@@ -18,9 +18,6 @@ export default function FooterNavbar() {
     );
     useEffect(() => {
         setIsHome(window.location.pathname === '/');
-        console.log('pathname', window.location.pathname);
-        console.log('isActuallyHome', window.location.pathname === '/');
-        console.log('isHome', isHome);
     }, [path, searchParams]);
     return (
         <motion.div
