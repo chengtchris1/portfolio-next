@@ -5,7 +5,7 @@ export function Footer() {
         <footer className="border-t border-neutral-200 bg-black text-white">
             <Container>
                 <div className="flex flex-col items-center py-28">
-                    <h4 className="mb-1 text-center text-4xl font-bold leading-tight tracking-tighter hover:underline lg:w-1/4 lg:text-left">
+                    <h4 className="mb-1 text-center text-4xl font-bold leading-tight tracking-tighter lg:w-1/4 lg:text-left">
                         Let's connect!
                     </h4>
                 </div>
