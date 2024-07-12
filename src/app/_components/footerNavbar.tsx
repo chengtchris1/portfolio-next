@@ -32,7 +32,7 @@ export default function FooterNavbar() {
                 <div className="flex flex-row items-center justify-end  ml-3 sm:ml-5 mr-6 sm:mr-16 md:mr-0">
                     <Link href={'https://www.linkedin.com/in/chengtchris/'}>
                         <div className="flex items-center justify-center mr-2">
-                            <span className="ml-3">//Linkedin</span>
+                            <span className="ml-3">//LinkedIn</span>
                             <FaLinkedin className="ml-1 text-xl" />
                         </div>
                     </Link>
