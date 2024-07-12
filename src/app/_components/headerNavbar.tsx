@@ -2,29 +2,21 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 function HeaderNavbar() {
     const { scrollYProgress } = useScroll();
-    const path = usePathname();
-    const [isHome, setIsHome] = useState<boolean | null>(null);
-    const [isLoading, setIsLoading] = useState<boolean>(true);
+    const isHome = useMemo(() => window.location.pathname === '/', []);
     const backgroundColor = useTransform(
         scrollYProgress,
         [0.11, 0.14],
         ['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']
     );
-    useEffect(() => {
-        setIsHome(window.location.pathname === '/');
-        setIsLoading(false);
-    }, [path]);
     return (
         <div className="fixed h-10 w-screen px-0 mx-0 -mt-0.5 z-[1000]">
             <motion.div
                 className="mx-0 w-full py-5 px-10 z-[1000] flex-row flex justify-between items-center backdrop-blur-none grid-cols-3 gap-0 drop-shadow"
                 style={
-                    isLoading
-                        ? { backgroundColor: 'rgba(0, 0, 0, 0)' }
-                        : isHome
+                    isHome
                           ? { backgroundColor }
                           : { backgroundColor: 'rgba(0, 0, 0, 1)' }
                 }

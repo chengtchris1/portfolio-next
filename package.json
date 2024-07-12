@@ -12,6 +12,7 @@
         "@radix-ui/react-slot": "^1.0.2",
         "@react-three/drei": "^9.107.0",
         "@react-three/fiber": "^8.16.8",
+        "bun": "^1.1.18",
         "class-variance-authority": "^0.7.0",
         "classnames": "^2.5.1",
         "clsx": "^2.1.1",
