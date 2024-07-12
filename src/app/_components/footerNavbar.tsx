@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 export default function FooterNavbar() {
     const { scrollYProgress } = useScroll();
     const path = usePathname();
-    const searchParams = useSearchParams();
     const [isHome, setIsHome] =  useState<boolean | null>(null);
     const backgroundColor = useTransform(
         scrollYProgress,
@@ -18,7 +17,7 @@ export default function FooterNavbar() {
     );
     useEffect(() => {
         setIsHome(window.location.pathname === '/');
-    }, [path, searchParams]);
+    }, [path]);
     return (
         <motion.div
             className="fixed bottom-0 z-[1000] flex h-10 w-screen flex-row items-center justify-end "
