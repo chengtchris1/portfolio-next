@@ -8,7 +8,6 @@ import Image from 'next/image';
 import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { FlipWords } from './_components/filpWords';
 import { ParallaxScroll } from './_components/parallax-scroll';
-
 export default function Index() {
     const greetings = [
         'Hello,', // English

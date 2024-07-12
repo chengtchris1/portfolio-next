@@ -7,6 +7,7 @@
         "lint": "prettier --write **/*.{ts,tsx,js,jsx,json,md}"
     },
     "dependencies": {
+        "@next/bundle-analyzer": "^14.2.5",
         "@radix-ui/react-navigation-menu": "^1.1.4",
         "@radix-ui/react-slot": "^1.0.2",
         "@react-three/drei": "^9.107.0",
