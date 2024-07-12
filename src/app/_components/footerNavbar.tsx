@@ -32,8 +32,8 @@ export default function FooterNavbar() {
                 <div className="flex flex-row items-center justify-end  ml-3 sm:ml-5 mr-6 sm:mr-16 md:mr-0">
                     <Link href={'https://www.linkedin.com/in/chengtchris/'}>
                         <div className='flex items-start justify-start mr-2'>
-                        <span className='ml-3'>//Linked</span>
-                        <FaLinkedin className="ml-0 text-xl" />
+                        <span className='ml-3'>//Linkedin</span>
+                        <FaLinkedin className="ml-1 text-xl" />
                         </div>
                     </Link>
                     <Link href={'https://github.com/chengtchris1'}>
