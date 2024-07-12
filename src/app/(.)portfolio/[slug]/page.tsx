@@ -1,6 +1,5 @@
 import BackButton from '@/app/_components/backButton';
 import Container from '@/app/_components/container';
-import Header from '@/app/_components/header';
 import { PostBody } from '@/app/_components/post-body';
 import { PostHeader } from '@/app/_components/post-header';
 import { getAllPortfolio, getPortfolioBySlug } from '@/lib/api';
@@ -19,7 +18,7 @@ export default async function Post({ params }: Params) {
     return (
         <main className="pt-16">
             <Container>
-                <BackButton className='mt-6'/>
+                <BackButton className="mt-6" />
                 <article className="mt-4 mb-32">
                     <PostHeader
                         title={post.title}
