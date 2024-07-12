@@ -18,8 +18,6 @@ const CoverImageCarausel = ({ title, src, slug }: Props) => {
     const carausel = (
         <Swiper
             className="flex w-full items-center justify-center"
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             effect={'cards'}
             modules={[Pagination, Scrollbar, EffectCards]}
             pagination={{ clickable: true }}

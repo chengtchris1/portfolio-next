@@ -13,8 +13,6 @@ export default function Carausel() {
         <div className="max-w-[405px]">
             <Swiper
                 id="portrait"
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 effect={'cards'}
                 initialSlide={3}
                 modules={[Pagination, Scrollbar, EffectCards]}
