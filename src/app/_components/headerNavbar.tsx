@@ -32,7 +32,7 @@ function HeaderNavbar(ref) {
                     </Link>
                 </div>
                 <div className="flex items-center justify-end sm:justify-center font-mono w-full col-span-2 sm:col-span-1 ">
-                    <div className="hidden sm:flex justify-center m;-3 sm:ml-5">
+                    <div className="hidden sm:flex justify-center ml-3 sm:ml-5">
                         <Link href="/#aboutme" scroll>
                             //About
                         </Link>
