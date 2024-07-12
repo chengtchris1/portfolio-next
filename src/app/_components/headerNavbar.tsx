@@ -2,15 +2,19 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-function HeaderNavbar(ref) {
+import { useState, useEffect } from 'react';
+function HeaderNavbar() {
     const { scrollYProgress } = useScroll();
     const path = usePathname();
-    const isHome = path === '/';
+    const [isHome, setIsHome] =  useState<boolean | null>(null);
     const backgroundColor = useTransform(
         scrollYProgress,
         [0.11, 0.14],
         ['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']
     );
+    useEffect(() => {
+        setIsHome(window.location.pathname === '/');
+    }, [path]);
     return (
         <div className="fixed h-10 w-screen px-0 mx-0 z-[1000]">
             <motion.div

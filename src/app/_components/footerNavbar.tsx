@@ -18,6 +18,7 @@ export default function FooterNavbar() {
     useEffect(() => {
         setIsHome(window.location.pathname === '/');
     }, [path]);
+
     return (
         <motion.div
             className="fixed bottom-0 z-[1000] flex h-10 w-screen flex-row items-center justify-end "
