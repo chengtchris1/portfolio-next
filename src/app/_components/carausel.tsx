@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { EffectCards, Pagination, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import portraitLoc from '@/assets/portrait.png';
+import portraitLoc from '/public/assets/portrait/portrait.png';
 export default function Carausel() {
     //const portraitLoc = '/assets/portrait/portrait.png';
     return (
