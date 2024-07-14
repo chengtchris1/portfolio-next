@@ -18,7 +18,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className='scroll-smooth'>
+        <html lang="en" className="scroll-smooth">
             <head>
                 {/*<link
                     rel="apple-touch-icon"
@@ -59,9 +59,7 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <Navbars>
-                    {children}
-                    </Navbars>
+                    <Navbars>{children}</Navbars>
                 </div>
                 <Footer />
             </body>

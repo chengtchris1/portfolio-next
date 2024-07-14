@@ -1,10 +1,10 @@
-"use client"
-import HeaderNavbar from "./headerNavbar";
-import FooterNavbar from "./footerNavbar";
-import { useScroll } from "framer-motion";
+'use client';
+import { useScroll } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect } from "react";
-export default function Navbars({ children }: {children: React.ReactNode}) {
+import { useEffect, useState } from 'react';
+import FooterNavbar from './footerNavbar';
+import HeaderNavbar from './headerNavbar';
+export default function Navbars({ children }: { children: React.ReactNode }) {
     const path = usePathname();
     const { scrollYProgress } = useScroll();
     const [isHome, setIsHome] = useState<boolean | null>(null);
@@ -12,10 +12,10 @@ export default function Navbars({ children }: {children: React.ReactNode}) {
         setIsHome(window.location.pathname === '/');
     }, [path]);
     return (
-      <>
-        <HeaderNavbar scrollYProgress={scrollYProgress} isHome={isHome}/>
+        <>
+            <HeaderNavbar scrollYProgress={scrollYProgress} isHome={isHome} />
             {children}
-        <FooterNavbar scrollYProgress={scrollYProgress} isHome={isHome}/>
-      </>
+            <FooterNavbar scrollYProgress={scrollYProgress} isHome={isHome} />
+        </>
     );
 }

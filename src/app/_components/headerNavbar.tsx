@@ -1,8 +1,13 @@
-import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion';
+import { motion, useTransform, type MotionValue } from 'framer-motion';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-function HeaderNavbar({scrollYProgress, isHome} :{scrollYProgress: MotionValue<number>, isHome: boolean | null}) {
+function HeaderNavbar({
+    scrollYProgress,
+    isHome,
+}: {
+    scrollYProgress: MotionValue<number>;
+    isHome: boolean | null;
+}) {
     const [isMounting, setIsMounting] = useState<boolean>(true);
     const backgroundColor = useTransform(
         scrollYProgress,

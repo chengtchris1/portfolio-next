@@ -1,15 +1,19 @@
 import { motion, useTransform, type MotionValue } from 'framer-motion';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
 import Container from './container';
-export default function FooterNavbar({scrollYProgress, isHome} :{scrollYProgress: MotionValue<number>, isHome: boolean | null}) {
+export default function FooterNavbar({
+    scrollYProgress,
+    isHome,
+}: {
+    scrollYProgress: MotionValue<number>;
+    isHome: boolean | null;
+}) {
     const backgroundColor = useTransform(
         scrollYProgress,
         [0, 0.03],
-        ['rgba(0, 0, 0, 0.01)', 'rgba(0, 0, 0, 1)'],
+        ['rgba(0, 0, 0, 0.01)', 'rgba(0, 0, 0, 1)']
     );
     return (
         <motion.div
