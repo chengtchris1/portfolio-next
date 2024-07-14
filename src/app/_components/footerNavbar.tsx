@@ -12,7 +12,7 @@ export default function FooterNavbar({
 }) {
     const backgroundColor = useTransform(
         scrollYProgress,
-        [0, 0.03],
+        [0, 0.04],
         ['rgba(0, 0, 0, 0.01)', 'rgba(0, 0, 0, 1)']
     );
     return (
