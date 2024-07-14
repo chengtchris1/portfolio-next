@@ -1,19 +1,17 @@
-'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useTransform, type MotionValue } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
 import Container from './container';
-export default function FooterNavbar() {
-    const { scrollYProgress } = useScroll();
+export default function FooterNavbar({scrollYProgress} :{scrollYProgress: MotionValue<number>}) {
     const path = usePathname();
     const [isHome, setIsHome] = useState<boolean | null>(null);
     const backgroundColor = useTransform(
         scrollYProgress,
-        [0, 0.02],
-        ['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']
+        [0, 0.03],
+        ['rgba(0, 0, 0, 0.01)', 'rgba(0, 0, 0, 1)'],
     );
     useEffect(() => {
         setIsHome(window.location.pathname === '/');

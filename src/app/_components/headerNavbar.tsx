@@ -1,10 +1,9 @@
 'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-function HeaderNavbar() {
-    const { scrollYProgress } = useScroll();
+function HeaderNavbar({scrollYProgress} :{scrollYProgress: MotionValue<number>}) {
     const path = usePathname();
     const [isHome, setIsHome] = useState<boolean | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);

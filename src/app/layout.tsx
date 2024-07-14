@@ -1,7 +1,6 @@
 import Footer from '@/app/_components/footer';
 import { Inter } from 'next/font/google';
-import FooterNavbar from './_components/footerNavbar';
-import HeaderNavbar from './_components/headerNavbar';
+import Navbars from './_components/Navbars';
 import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 /*
@@ -60,9 +59,9 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} bg-black text-white`}>
                 <div className="min-h-screen">
-                    <HeaderNavbar />
+                    <Navbars>
                     {children}
-                    <FooterNavbar />
+                    </Navbars>
                 </div>
                 <Footer />
             </body>
