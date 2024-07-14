@@ -1,27 +1,23 @@
-'use client';
 import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-function HeaderNavbar({scrollYProgress} :{scrollYProgress: MotionValue<number>}) {
-    const path = usePathname();
-    const [isHome, setIsHome] = useState<boolean | null>(null);
-    const [isLoading, setIsLoading] = useState<boolean>(true);
+function HeaderNavbar({scrollYProgress, isHome} :{scrollYProgress: MotionValue<number>, isHome: boolean | null}) {
+    const [isMounting, setIsMounting] = useState<boolean>(true);
     const backgroundColor = useTransform(
         scrollYProgress,
         [0.11, 0.14],
         ['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']
     );
     useEffect(() => {
-        setIsHome(window.location.pathname === '/');
-        setIsLoading(false);
-    }, [path]);
+        setIsMounting(false);
+    }, []);
     return (
         <div className="fixed h-10 w-screen px-0 mx-0 -mt-0.5 z-[1000]">
             <motion.div
                 className="mx-0 w-full py-5 px-10 z-[1000] flex-row flex justify-between items-center backdrop-blur-none grid-cols-3 gap-0 drop-shadow"
                 style={
-                    isLoading
+                    isMounting
                         ? { backgroundColor: 'rgba(0, 0, 0, 0)' }
                         : isHome
                           ? { backgroundColor }

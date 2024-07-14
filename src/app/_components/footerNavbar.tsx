@@ -5,18 +5,12 @@ import { useEffect, useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
 import Container from './container';
-export default function FooterNavbar({scrollYProgress} :{scrollYProgress: MotionValue<number>}) {
-    const path = usePathname();
-    const [isHome, setIsHome] = useState<boolean | null>(null);
+export default function FooterNavbar({scrollYProgress, isHome} :{scrollYProgress: MotionValue<number>, isHome: boolean | null}) {
     const backgroundColor = useTransform(
         scrollYProgress,
         [0, 0.03],
         ['rgba(0, 0, 0, 0.01)', 'rgba(0, 0, 0, 1)'],
     );
-    useEffect(() => {
-        setIsHome(window.location.pathname === '/');
-    }, [path]);
-
     return (
         <motion.div
             className="fixed bottom-0 z-[1000] flex h-10 w-screen flex-row items-center justify-end "
