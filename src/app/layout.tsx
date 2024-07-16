@@ -1,6 +1,5 @@
 import Footer from '@/app/_components/footer';
-import { Inter } from 'next/font/google';
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google';
 import Navbars from './_components/Navbars';
 import './globals.css';
 
