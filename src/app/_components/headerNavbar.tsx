@@ -34,7 +34,7 @@ function HeaderNavbar({
                         <span className="hidden sm:flex text-3xl  hover:no-underline tracking-widest">
                             Chris Cheng._
                         </span>
-                        <span className="flex sm:hidden text-2xl  hover:no-underline min-w-36 tracking-widest">
+                        <span className="flex sm:hidden text-xl  hover:no-underline min-w-36 tracking-widest">
                             Chris Cheng._
                         </span>
                     </Link>
