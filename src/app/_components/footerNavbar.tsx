@@ -24,17 +24,17 @@ export default function FooterNavbar({
                     : { backgroundColor: 'rgba(0, 0, 0, 1)' }
             }
         >
-            <Container className="flex justify-end font-mono">
+            <Container className="flex justify-end font-semibold tracking-widest uppercase text-sm">
                 <div className="flex flex-row items-center justify-end  ml-3 sm:ml-5 mr-6 sm:mr-16 md:mr-0">
                     <Link href={'https://www.linkedin.com/in/chengtchris/'}>
                         <div className="flex items-center justify-center mr-2">
-                            <span className="ml-3">//LinkedIn</span>
+                            <span className="ml-3"><span className='tracking-[0.25rem] up'>//</span>LinkedIn</span>
                             <FaLinkedin className="ml-1 text-xl" />
                         </div>
                     </Link>
                     <Link href={'https://github.com/chengtchris1'}>
                         <div className="flex items-center justify-center">
-                            <span className="ml-3">//Github</span>
+                            <span className="ml-3"><span className='tracking-[0.25rem]'>//</span>Github</span>
                             <LuGithub className="ml-1 text-xl" />
                         </div>
                     </Link>

@@ -8,6 +8,9 @@ import Image from 'next/image';
 import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { FlipWords } from './_components/filpWords';
 import { ParallaxScroll } from './_components/parallax-scroll';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
+import { cn } from '@/lib/utils';
 export default function Index() {
     const greetings = [
         'Hello,', // English
@@ -40,7 +43,7 @@ export default function Index() {
                     <div className="absolute left-[58%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
                         <div className="font-light tracking-tighter">
                             <div className="bg-transparent bg-clip-text text-transparent drop-shadow-2xl">
-                                <div className="font-bold text-blue italic">
+                                <div className={cn(inter.className, "font-bold text-blue italic")}>
                                     <FlipWords
                                         className="opacity-60"
                                         words={greetings}

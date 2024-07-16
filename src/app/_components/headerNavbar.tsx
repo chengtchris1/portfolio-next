@@ -29,25 +29,25 @@ function HeaderNavbar({
                           : { backgroundColor: 'rgba(0, 0, 0, 1)' }
                 }
             >
-                <div className="ml-0 sm:ml-10 w-full col-span-1">
+                <div className="ml-0 sm:ml-10 w-full col-span-1 small-caps font-bold">
                     <Link href={'/'}>
-                        <span className="hidden sm:flex text-2xl font-bold font-mono  hover:no-underline">
+                        <span className="hidden sm:flex text-3xl  hover:no-underline tracking-widest">
                             Chris Cheng._
                         </span>
-                        <span className="flex sm:hidden text-xl font-bold font-mono  hover:no-underline min-w-36">
+                        <span className="flex sm:hidden text-2xl  hover:no-underline min-w-36 tracking-widest">
                             Chris Cheng._
                         </span>
                     </Link>
                 </div>
-                <div className="flex items-center justify-end sm:justify-center font-mono w-full col-span-2 sm:col-span-1 ">
+                <div className="flex items-center justify-end sm:justify-center font-bold w-full col-span-2 sm:col-span-1 tracking-widest text-lg uppercase">
                     <div className="hidden sm:flex justify-center ml-3 sm:ml-5">
                         <Link href="/#aboutme" scroll>
-                            //About
+                            <span className='tracking-[0.25rem]'>//</span>About
                         </Link>
                     </div>
-                    <div className="flex justify-center ml-3 sm:ml-5">
+                    <div className="flex justify-center ml-3 sm:ml-5 small-caps">
                         <Link href="/#portfolio" scroll>
-                            //Portfolio
+                            <span className='tracking-[0.25rem]'>//</span>Portfolio
                         </Link>
                     </div>
                 </div>

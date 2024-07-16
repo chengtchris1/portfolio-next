@@ -99,7 +99,11 @@ module.exports = {
         logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
         themeRoot: ':root', // The element that receives theme color CSS variables
     },
-    plugins: [addVariablesForColors, require('daisyui')],
+    plugins: [
+        addVariablesForColors,
+        require('daisyui'),
+        require('tailwindcss-opentype'),
+    ],
 };
 function addVariablesForColors({ addBase, theme }: any) {
     let allColors = flattenColorPalette(theme('colors'));

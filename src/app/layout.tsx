@@ -1,8 +1,10 @@
 import Footer from '@/app/_components/footer';
 import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google'
 import Navbars from './_components/Navbars';
 import './globals.css';
-const inter = Inter({ subsets: ['latin'] });
+
+const montserrat = Montserrat({ subsets: ['latin'] });
 /*
 export const metadata: Metadata = {
     title: `Next.js Blog Example with ${CMS_NAME}`,
@@ -57,7 +59,7 @@ export default function RootLayout({
                     href="/feed.xml"
                 />
             </head>
-            <body className={`${inter.className} bg-black text-white`}>
+            <body className={`${montserrat.className} bg-black text-white`}>
                 <div className="min-h-screen">
                     <Navbars>{children}</Navbars>
                 </div>
