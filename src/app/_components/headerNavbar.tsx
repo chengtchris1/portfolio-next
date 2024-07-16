@@ -39,7 +39,7 @@ function HeaderNavbar({
                         </span>
                     </Link>
                 </div>
-                <div className="flex items-center justify-end sm:justify-center font-bold w-full col-span-2 sm:col-span-1 tracking-widest text-lg uppercase">
+                <div className="flex items-center justify-end sm:justify-center font-bold w-full col-span-2 sm:col-span-1 tracking-widest text-lg uppercase text-sm">
                     <div className="hidden sm:flex justify-center ml-3 sm:ml-5">
                         <Link href="/#aboutme" scroll>
                             <span className='tracking-[0.25rem]'>//</span>About
