@@ -33,7 +33,7 @@ export default function Hero() {
                 </div>
                 <div className="swap-off flex items-center justify-center w-20 rounded-xl">
                     PAUSE
-                    <FaPause className="ml-4" />
+                    <FaPause className="ml-1" />
                 </div>
             </label>
 
