@@ -26,7 +26,7 @@ export default function FooterNavbar({
         >
             <Container className="flex justify-end font-semibold tracking-widest uppercase text-sm">
                 <div className="flex flex-row items-center justify-end  ml-3 sm:ml-5 mr-6 sm:mr-16 md:mr-0">
-                    <Link href={'https://www.linkedin.com/in/chengtchris/'}>
+                    <Link href={'https://www.linkedin.com/in/chengtchris/'} target="_blank" rel="noopener noreferrer">
                         <div className="flex items-center justify-center mr-2">
                             <span className="ml-3">
                                 <span className="tracking-[0.25rem] up">
@@ -37,7 +37,7 @@ export default function FooterNavbar({
                             <FaLinkedin className="ml-1 text-xl" />
                         </div>
                     </Link>
-                    <Link href={'https://github.com/chengtchris1'}>
+                    <Link href={'https://github.com/chengtchris1'} target="_blank" rel="noopener noreferrer">
                         <div className="flex items-center justify-center">
                             <span className="ml-3">
                                 <span className="tracking-[0.25rem]">//</span>
