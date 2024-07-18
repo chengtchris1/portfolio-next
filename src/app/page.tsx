@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { BackgroundGradientAnimation } from './_components/animatedGradient';
 import { FlipWords } from './_components/filpWords';
 import { ParallaxScroll } from './_components/parallax-scroll';
-const inter = Inter({ subsets: ['latin'] });
+import Hero from './_components/hero';
 export default function Index() {
     const greetings = [
         'Hello,', // English
@@ -27,50 +27,7 @@ export default function Index() {
         <main>
             <div className="bg-dark-gradient m-0 mb-0 flex h-fit flex-col-reverse items-center justify-center bg-black bg-cover bg-center bg-no-repeat object-cover sm:h-screen sm:flex-row">
                 {' '}
-                <BackgroundGradientAnimation
-                    gradientBackgroundStart="rgb(0,0,0)"
-                    gradientBackgroundEnd="rgb(0,0,0)"
-                    firstColor="20,184,166"
-                    // secondColor="255,255,255"
-                    thirdColor="20,184,166"
-                    fifthColor="56,189,248"
-                    fourthColor="127,0,255"
-                    //pointerColor="255, 255, 255"
-                    interactive={true}
-                    blendingValue="color-dodge"
-                    size="90%"
-                >
-                    <div className="absolute left-[58%] top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 transform text-left text-6xl text-white mix-blend-screen md:left-[70%] lg:left-[70%] md:text-8xl lg:text-9xl w-screen">
-                        <div className="font-light tracking-tighter">
-                            <div className="bg-transparent bg-clip-text text-transparent drop-shadow-2xl">
-                                <div
-                                    className={cn(
-                                        inter.className,
-                                        'font-bold text-blue italic'
-                                    )}
-                                >
-                                    <FlipWords
-                                        className="opacity-60"
-                                        words={greetings}
-                                        duration={500}
-                                    />
-                                </div>
-                                <div className="bg-gradient-to-b from-teal-400/95 to-indigo-500/95  bg-clip-text text-transparent drop-shadow-2xl">
-                                    <div className="px-2 font-bold">
-                                        I'm Chris.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <Image
-                        className="opacity-60"
-                        src={bg}
-                        quality={100}
-                        priority={true}
-                        fill
-                    />
-                </BackgroundGradientAnimation>
+                <Hero />
             </div>
 
             <div id="aboutme" className="w-full bg-white text-black">

@@ -17,6 +17,7 @@ export const BackgroundGradientAnimation = ({
     className,
     interactive = true,
     containerClassName,
+    isPaused = false,
 }: {
     gradientBackgroundStart?: string;
     gradientBackgroundEnd?: string;
@@ -32,6 +33,7 @@ export const BackgroundGradientAnimation = ({
     className?: string;
     interactive?: boolean;
     containerClassName?: string;
+    isPaused?: boolean;
 }) => {
     const interactiveRef = useRef<HTMLDivElement>(null);
 
@@ -59,7 +61,12 @@ export const BackgroundGradientAnimation = ({
     }, []);
 
     useEffect(() => {
+        console.log('isPaused', isPaused);
+
         function move() {
+            if (isPaused) {
+                return;
+            }
             if (!interactiveRef.current) {
                 return;
             }
@@ -70,11 +77,13 @@ export const BackgroundGradientAnimation = ({
             )}px, ${Math.round(curY)}px)`;
         }
 
-        move();
-    }, [tgX, tgY]);
+
+            move();
+
+    }, [tgX, tgY, isPaused]);
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-        if (interactiveRef.current) {
+        if (!isPaused && interactiveRef.current) {
             const rect = interactiveRef.current.getBoundingClientRect();
             setTgX(event.clientX - rect.left);
             setTgY(event.clientY - rect.top);
@@ -87,26 +96,26 @@ export const BackgroundGradientAnimation = ({
     }, []);
 
     return (
+
         <div
             className={cn(
                 'relative left-0 top-0 h-screen w-screen overflow-hidden bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]',
                 containerClassName
             )}
         >
+
             <svg className="hidden">
                 <defs>
                     <filter id="blurMe">
                         <feGaussianBlur
                             in="SourceGraphic"
                             stdDeviation="10"
-                            result="blur"
-                        />
+                            result="blur" />
                         <feColorMatrix
                             in="blur"
                             mode="matrix"
                             values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                            result="goo"
-                        />
+                            result="goo" />
                         <feBlend in="SourceGraphic" in2="goo" />
                     </filter>
                 </defs>
@@ -124,6 +133,7 @@ export const BackgroundGradientAnimation = ({
                         `left-[calc(50%-var(--size)/2)] top-[calc(50%-var(--size)/2)] h-[var(--size)] w-[var(--size)] [mix-blend-mode:var(--blending-value)]`,
                         `[transform-origin:center_center]`,
                         `animate-first`,
+                        !isPaused && `pause`,
                         `opacity-100`
                     )}
                 ></div>
@@ -133,7 +143,8 @@ export const BackgroundGradientAnimation = ({
                         `left-[calc(50%-var(--size)/2)] top-[calc(50%-var(--size)/2)] h-[var(--size)] w-[var(--size)] [mix-blend-mode:var(--blending-value)]`,
                         `[transform-origin:calc(50%-400px)]`,
                         `animate-second`,
-                        `opacity-100`
+                        `opacity-100`,
+                         isPaused && `pause`,
                     )}
                 ></div>
                 <div
@@ -142,7 +153,8 @@ export const BackgroundGradientAnimation = ({
                         `left-[calc(50%-var(--size)/2)] top-[calc(50%-var(--size)/2)] h-[var(--size)] w-[var(--size)] [mix-blend-mode:var(--blending-value)]`,
                         `[transform-origin:calc(50%+400px)]`,
                         `animate-third`,
-                        `opacity-100`
+                        `opacity-100`,
+                         isPaused && `pause`,
                     )}
                 ></div>
                 <div
@@ -151,7 +163,8 @@ export const BackgroundGradientAnimation = ({
                         `left-[calc(50%-var(--size)/2)] top-[calc(50%-var(--size)/2)] h-[var(--size)] w-[var(--size)] [mix-blend-mode:var(--blending-value)]`,
                         `[transform-origin:calc(50%-200px)]`,
                         `animate-fourth`,
-                        `opacity-70`
+                        `opacity-70`,
+                         isPaused && `pause`,
                     )}
                 ></div>
                 <div
@@ -160,7 +173,8 @@ export const BackgroundGradientAnimation = ({
                         `left-[calc(50%-var(--size)/2)] top-[calc(50%-var(--size)/2)] h-[var(--size)] w-[var(--size)] [mix-blend-mode:var(--blending-value)]`,
                         `[transform-origin:calc(50%-800px)_calc(50%+800px)]`,
                         `animate-fifth`,
-                        `opacity-100`
+                        `opacity-100`,
+                        isPaused && `pause`,
                     )}
                 ></div>
 

@@ -5,25 +5,24 @@ a:hover {
     text-decoration: underline; /* Underlines links on hover */
 }
 li {
-    padding: 0px
+    padding: 0px;
 }
 ul {
-  padding: 0;
-  padding-left: 20px;
-  list-style-type: circle;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-
+    padding: 0;
+    padding-left: 20px;
+    list-style-type: circle;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 /* Second level of unordered list */
 ul ul {
-  padding-left: 40px;
+    padding-left: 40px;
 }
 
 /* Third level of unordered list */
 ul ul ul {
-  padding-left: 60px;
+    padding-left: 60px;
 }
 @layer base {
     :root {
@@ -95,5 +94,10 @@ ul ul ul {
     }
     body {
         @apply bg-background text-foreground;
+    }
+}
+@layer utilities {
+    .pause {
+        animation-play-state: paused;
     }
 }
