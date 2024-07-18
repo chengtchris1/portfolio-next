@@ -77,9 +77,7 @@ export const BackgroundGradientAnimation = ({
             )}px, ${Math.round(curY)}px)`;
         }
 
-
-            move();
-
+        move();
     }, [tgX, tgY, isPaused]);
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -96,26 +94,26 @@ export const BackgroundGradientAnimation = ({
     }, []);
 
     return (
-
         <div
             className={cn(
                 'relative left-0 top-0 h-screen w-screen overflow-hidden bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]',
                 containerClassName
             )}
         >
-
             <svg className="hidden">
                 <defs>
                     <filter id="blurMe">
                         <feGaussianBlur
                             in="SourceGraphic"
                             stdDeviation="10"
-                            result="blur" />
+                            result="blur"
+                        />
                         <feColorMatrix
                             in="blur"
                             mode="matrix"
                             values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                            result="goo" />
+                            result="goo"
+                        />
                         <feBlend in="SourceGraphic" in2="goo" />
                     </filter>
                 </defs>
@@ -144,7 +142,7 @@ export const BackgroundGradientAnimation = ({
                         `[transform-origin:calc(50%-400px)]`,
                         `animate-second`,
                         `opacity-100`,
-                         isPaused && `pause`,
+                        isPaused && `pause`
                     )}
                 ></div>
                 <div
@@ -154,7 +152,7 @@ export const BackgroundGradientAnimation = ({
                         `[transform-origin:calc(50%+400px)]`,
                         `animate-third`,
                         `opacity-100`,
-                         isPaused && `pause`,
+                        isPaused && `pause`
                     )}
                 ></div>
                 <div
@@ -164,7 +162,7 @@ export const BackgroundGradientAnimation = ({
                         `[transform-origin:calc(50%-200px)]`,
                         `animate-fourth`,
                         `opacity-70`,
-                         isPaused && `pause`,
+                        isPaused && `pause`
                     )}
                 ></div>
                 <div
@@ -174,7 +172,7 @@ export const BackgroundGradientAnimation = ({
                         `[transform-origin:calc(50%-800px)_calc(50%+800px)]`,
                         `animate-fifth`,
                         `opacity-100`,
-                        isPaused && `pause`,
+                        isPaused && `pause`
                     )}
                 ></div>
 

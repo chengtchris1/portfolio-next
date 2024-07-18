@@ -1,16 +1,10 @@
 import Container from '@/app/_components/container';
 import { Intro } from '@/app/_components/intro';
 import { MoreStories } from '@/app/_components/more-stories';
-import bg from '@/assets/hero-bg.png';
 import { getAllPortfolio } from '@/lib/api';
-import { cn } from '@/lib/utils';
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Image from 'next/image';
-import { BackgroundGradientAnimation } from './_components/animatedGradient';
-import { FlipWords } from './_components/filpWords';
-import { ParallaxScroll } from './_components/parallax-scroll';
 import Hero from './_components/hero';
+import { ParallaxScroll } from './_components/parallax-scroll';
 export default function Index() {
     const greetings = [
         'Hello,', // English
