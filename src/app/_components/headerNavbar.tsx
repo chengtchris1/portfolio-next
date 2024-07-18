@@ -31,10 +31,10 @@ function HeaderNavbar({
             >
                 <div className="ml-0 sm:ml-10 w-full col-span-1 small-caps font-bold">
                     <Link href={'/'}>
-                        <span className="hidden md:flex text-3xl  hover:no-underline tracking-widest">
+                        <span className="hidden lg:flex text-3xl  hover:no-underline tracking-widest">
                             Chris Cheng._
                         </span>
-                        <span className="flex md:hidden text-xl  hover:no-underline min-w-36 tracking-widest">
+                        <span className="flex lg:hidden text-xl hover:no-underline min-w-36 tracking-widest">
                             Chris Cheng._
                         </span>
                     </Link>
