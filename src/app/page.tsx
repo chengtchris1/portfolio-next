@@ -123,5 +123,9 @@ export function generateMetadata({ params }: Params): Metadata {
 
     return {
         title,
+        openGraph: {
+            title,
+            images: ['/assets/Homepage_og.png'],
+        },
     };
 }
