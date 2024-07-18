@@ -52,6 +52,7 @@ const CoverImageCarausel = ({ title, src, slug }: Props) => {
                                         objectFit: 'fill',
                                         padding: '1px',
                                     }}
+                                    priority
                                 />
                             </div>
                         </div>
