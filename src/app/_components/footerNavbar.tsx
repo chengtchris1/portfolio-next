@@ -41,7 +41,7 @@ export default function FooterNavbar({
                         </div>
 
 
-                        <div className="flex flex-row items-center justify-center ml-6">
+                        <div className="flex flex-row items-center justify-center ml-1 sm:ml-6">
 
                                 <span className="-mt-0.5 mr-1 hover:no-underline">※</span>
                             <Link href={'https://github.com/chengtchris1'} target="_blank" rel="noopener noreferrer" className='flex'>
