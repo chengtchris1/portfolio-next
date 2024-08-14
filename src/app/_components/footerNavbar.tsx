@@ -25,40 +25,44 @@ export default function FooterNavbar({
                     : { backgroundColor: 'rgba(0, 0, 0, 1)' }
             }
         >
-            <Container className="flex justify-between items-center font-semibold uppercase text-sm px-0 sm:px-0 lg:px-0 ml-0 mr-0 w-[90%]">
+            <Container className="flex justify-between items-center font-semibold uppercase text-sm px-0 sm:px-0 lg:px-0 ml-0 mr-0 w-[90%] tracking-widest">
                 <div className="flex flex-row items-center justify-start">
-                    <Link href={'https://www.linkedin.com/in/chengtchris/'} target="_blank" rel="noopener noreferrer">
+
                         <div className="flex items-center justify-center mr-2">
-                            <span className="ml-3">
-                                <span className="tracking-[0.25rem]">
+
+                                <span className="-mt-0.5 mr-1 hover:no-underline">
                                     ※
                                 </span>
+                            <Link href={'https://www.linkedin.com/in/chengtchris/'} target="_blank" rel="noopener noreferrer" className='flex'>
                                 LinkedIn
-                            </span>
+
                             <FaLinkedin className="ml-1 text-xl" />
+                            </Link>
                         </div>
-                    </Link>
-                    <Link href={'https://github.com/chengtchris1'} target="_blank" rel="noopener noreferrer">
-                        <div className="flex items-center justify-center">
-                            <span className="ml-3">
-                                <span className="tracking-[0.25rem]">※</span>
+
+
+                        <div className="flex flex-row items-center justify-center ml-6">
+
+                                <span className="-mt-0.5 mr-1 hover:no-underline">※</span>
+                            <Link href={'https://github.com/chengtchris1'} target="_blank" rel="noopener noreferrer" className='flex'>
                                 Github
-                            </span>
-                            <LuGithub className="ml-1 text-xl" />
+                                <LuGithub className="ml-1 text-xl" />
+                            </Link>
+
                         </div>
-                    </Link>
+
 
                 </div>
                 <div className='flex flex-row items-center justify-start'>
-                 <Link href={'/resume.pdf'} target="_blank" rel="noopener noreferrer">
+
                         <div className="flex items-center justify-center">
-                            <span className="ml-0">
-                                <span className="tracking-[0.25rem]">※</span>
-                                Resume
-                            </span>
+                            <span className='-mt-0.5 mr-1 hover:no-underline'>※</span>
+                            <Link href={'/resume.pdf'} target="_blank" rel="noopener noreferrer" className='flex'>
+                            Resume
                             <MdContacts className="ml-1 mr-6 sm:mr-3 text-xl" />
+                            </Link>
                         </div>
-                    </Link>
+
                 </div>
             </Container>
         </motion.div>

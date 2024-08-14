@@ -39,18 +39,25 @@ function HeaderNavbar({
                         </span>
                     </Link>
                 </div>
-                <div className="flex items-center justify-end sm:justify-center font-bold w-full col-span-2 sm:col-span-1 tracking-widest text-lg uppercase text-sm">
+                <div className="flex items-center justify-end sm:justify-center font-bold w-full col-span-2 sm:col-span-1 tracking-widest uppercase text-sm">
+
                     <div className="hidden sm:flex justify-center ml-3 sm:ml-5">
-                        <Link href="/#aboutme" scroll>
-                            <span className="tracking-[0.25rem]">※</span>About
-                        </Link>
+
+                            <span className="tracking-[0.25rem] -mt-[0.06rem]">※</span>
+                            <Link href="/#aboutme" scroll>
+                             About
+                             </Link>
+
                     </div>
+
+
                     <div className="flex justify-center ml-3 sm:ml-5 small-caps">
-                        <Link href="/#portfolio" scroll>
-                            <span className="tracking-[0.25rem]">※</span>
+                            <span className="tracking-[0.25rem] -mt-[0.06rem]">※</span>
+                            <Link href="/#portfolio" scroll>
                             Portfolio
-                        </Link>
+                            </Link>
                     </div>
+
                 </div>
                 <div className="col-span-1 w-full hidden md:flex"></div>
             </motion.div>
