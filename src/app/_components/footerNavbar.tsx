@@ -2,7 +2,7 @@ import { motion, useTransform, type MotionValue } from 'framer-motion';
 import Link from 'next/link';
 import { FaLinkedin } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
-import { MdContacts } from "react-icons/md";
+import { BsFillPersonVcardFill } from "react-icons/bs";
 import Container from './container';
 export default function FooterNavbar({
     scrollYProgress,
@@ -59,7 +59,7 @@ export default function FooterNavbar({
                             <span className='-mt-0.5 mr-1 hover:no-underline'>※</span>
                             <Link href={'/resume.pdf'} target="_blank" rel="noopener noreferrer" className='flex'>
                             Resume
-                            <MdContacts className="ml-1 mr-6 sm:mr-3 text-xl" />
+                            <BsFillPersonVcardFill className="ml-1 mr-6 sm:mr-3 text-xl" />
                             </Link>
                         </div>
 
