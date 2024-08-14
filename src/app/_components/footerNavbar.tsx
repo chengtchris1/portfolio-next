@@ -18,23 +18,23 @@ export default function FooterNavbar({
     );
     return (
         <motion.div
-            className="fixed bottom-0 z-[1000] flex h-10 w-screen items-center sm:justify-start justify-center sm:ml-16"
+            className="fixed bottom-0 z-[1000] flex h-10 w-screen items-center sm:justify-start justify-center sm:pl-16"
             style={
                 isHome
                     ? { backgroundColor }
                     : { backgroundColor: 'rgba(0, 0, 0, 1)' }
             }
         >
-            <Container className="flex justify-between items-center font-semibold uppercase text-sm px-0 sm:px-0 lg:px-0 ml-0 mr-0 w-[90%] tracking-widest">
+            <Container className="flex justify-between items-center font-semibold uppercase text-sm px-0 sm:px-0 lg:px-0 ml-0 mr-0 w-full tracking-widest">
                 <div className="flex flex-row items-center justify-start">
 
-                        <div className="flex items-center justify-center mr-2">
+                        <div className="flex items-center justify-center mr-2  mx-10 sm-ml-0">
 
-                                <span className="-mt-0.5 mr-1 hover:no-underline">
+                                <span className="hidden sm:flex -mt-0.5 ml-3 sm:ml-0 mr-1 hover:no-underline">
                                     ※
                                 </span>
                             <Link href={'https://www.linkedin.com/in/chengtchris/'} target="_blank" rel="noopener noreferrer" className='flex'>
-                                LinkedIn
+                                <span className='hidden sm:flex'>LinkedIn</span>
 
                             <FaLinkedin className="ml-1 text-xl" />
                             </Link>
@@ -43,20 +43,19 @@ export default function FooterNavbar({
 
                         <div className="flex flex-row items-center justify-center ml-1 sm:ml-6">
 
-                                <span className="-mt-0.5 mr-1 hover:no-underline">※</span>
+                                <span className="hidden sm:flex -mt-0.5 mr-1 hover:no-underline">※</span>
                             <Link href={'https://github.com/chengtchris1'} target="_blank" rel="noopener noreferrer" className='flex'>
-                                Github
+                                <span className='hidden sm:flex'>Github</span>
                                 <LuGithub className="ml-1 text-xl" />
                             </Link>
 
                         </div>
 
-
                 </div>
-                <div className='flex flex-row items-center justify-start'>
+                <div className='flex flex-row items-center justify-start mr-7'>
 
                         <div className="flex items-center justify-center">
-                            <span className='-mt-0.5 mr-1 hover:no-underline'>※</span>
+                            <span className='hidden sm:flex -mt-0.5 mr-1 hover:no-underline'>※</span>
                             <Link href={'/resume.pdf'} target="_blank" rel="noopener noreferrer" className='flex'>
                             Resume
                             <BsFillPersonVcardFill className="ml-1 mr-6 sm:mr-3 text-xl" />
